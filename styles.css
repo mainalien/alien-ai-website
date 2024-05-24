@@ -2,6 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #001f3f; /* Dark blue background */
+    color: #ffffff; /* White text */
 }
 
 header {
@@ -45,31 +47,25 @@ main {
     padding: 20px;
 }
 
-.intro, .about, .contact-form {
+.intro, .about {
     margin-bottom: 20px;
 }
 
-.contact-form form {
-    display: flex;
-    flex-direction: column;
+.about h3 {
+    margin-top: 20px;
 }
 
-.contact-form label {
-    margin-bottom: 5px;
+ul {
+    list-style: disc;
+    padding-left: 20px;
 }
 
-.contact-form input, .contact-form textarea {
-    margin-bottom: 10px;
-    padding: 10px;
-    font-size: 16px;
+a {
+    color: #ffcc00; /* Yellow color for links */
 }
 
-button {
-    padding: 10px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+a:hover {
+    text-decoration: underline;
 }
 
 footer {
