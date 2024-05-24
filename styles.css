@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #003366; /* Dark blue background */
+    background-color: #000080; /* Dark blue background */
     color: #ffffff; /* White text */
 }
 
 header, footer {
-    background-color: #003366;  /* Dark blue background */
+    background-color: #000080;  /* Dark blue background */
     text-align: center;
     padding: 1em 0;
 }
