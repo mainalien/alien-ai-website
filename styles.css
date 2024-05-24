@@ -7,7 +7,7 @@ body {
 }
 
 header, footer {
-    background-color: #002244; /* Slightly darker blue for header and footer */
+    background-color: #003366;  /* Dark blue background */
     text-align: center;
     padding: 1em 0;
 }
