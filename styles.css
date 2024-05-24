@@ -13,8 +13,19 @@ header {
     justify-content: space-between;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
 .logo {
-    height: 50px;
+    height: 96px; /* 1 inch at 96 DPI */
+    margin-right: 20px;
+}
+
+.company-name {
+    font-size: 48px; /* 0.5 inch at 96 DPI */
+    margin: 0;
 }
 
 nav ul {
