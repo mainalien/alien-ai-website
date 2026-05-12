@@ -53,7 +53,7 @@ export function Process() {
             <Reveal key={s.n} as="li" delay={0.06 + i * 0.06}>
               <article className="flex flex-col gap-3 md:gap-5 p-5 md:p-7 rounded-2xl border border-ink/12 h-full bg-parchment">
                 <div className="flex items-baseline justify-between">
-                  <span className="metric text-[44px] text-terracotta-deep">
+                  <span className="metric text-[44px] text-ember-deep">
                     {s.n}
                   </span>
                   <span className="font-mono text-[10.5px] tracking-[0.18em] uppercase text-graphite-soft">

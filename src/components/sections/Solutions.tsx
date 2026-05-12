@@ -71,7 +71,7 @@ export function Solutions() {
             <Reveal key={s.index} as="li" delay={0.06 + (i % 3) * 0.05}>
               <article className="card rounded-2xl p-5 md:p-8 h-full flex flex-col gap-4 md:gap-5 transition-colors hover:border-ink/20">
                 <div className="flex items-baseline justify-between">
-                  <span className="font-mono text-[11px] tracking-[0.18em] uppercase text-terracotta-deep">
+                  <span className="font-mono text-[11px] tracking-[0.18em] uppercase text-ember-deep">
                     {s.family}
                   </span>
                   <span className="font-mono text-[11px] tracking-[0.16em] text-graphite-soft">

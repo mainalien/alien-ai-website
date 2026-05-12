@@ -7,8 +7,9 @@
   --color-ink-soft: #292e3d;
   --color-graphite: #4e5165;
   --color-graphite-soft: #6f7287;
-  --color-terracotta: #d0864a;
-  --color-terracotta-deep: #b06a32;
+  --color-ember: #d24d2a;
+  --color-ember-deep: #a93b1f;
+  --color-ember-soft: #e3784f;
 
   --font-display: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system,
     "Segoe UI", Roboto, sans-serif;
@@ -49,7 +50,7 @@ a {
 
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid var(--color-terracotta-deep);
+  outline: 2px solid var(--color-ember-deep);
   outline-offset: 4px;
   border-radius: 2px;
 }
@@ -81,7 +82,7 @@ button:focus-visible {
   font-size: 11px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--color-terracotta-deep);
+  color: var(--color-ember-deep);
 }
 
 .rule {

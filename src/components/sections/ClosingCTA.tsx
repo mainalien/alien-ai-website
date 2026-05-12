@@ -8,7 +8,7 @@ export function ClosingCTA() {
           <div
             aria-hidden
             className="absolute -top-32 -right-24 w-[420px] h-[420px] rounded-full opacity-30 blur-3xl"
-            style={{ background: "radial-gradient(closest-side, var(--color-terracotta), transparent 70%)" }}
+            style={{ background: "radial-gradient(closest-side, var(--color-ember), transparent 70%)" }}
           />
           <Reveal>
             <p className="eyebrow-accent mb-5 md:mb-8">/ Start a project</p>
@@ -32,10 +32,10 @@ export function ClosingCTA() {
             <div className="mt-8 md:mt-12 flex flex-col sm:flex-row gap-3 md:gap-4">
               <a
                 href="mailto:aliens@alienai.llc"
-                className="inline-flex items-center justify-between gap-3 bg-ink text-parchment rounded-full pl-7 pr-3 py-3.5 text-[15.5px] font-medium no-underline hover:bg-terracotta-deep transition-colors group"
+                className="inline-flex items-center justify-between gap-3 bg-ink text-parchment rounded-full pl-7 pr-3 py-3.5 text-[15.5px] font-medium no-underline hover:bg-ember-deep transition-colors group"
               >
                 <span>aliens@alienai.llc</span>
-                <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-parchment text-ink group-hover:text-terracotta-deep transition-colors">
+                <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-parchment text-ink group-hover:text-ember-deep transition-colors">
                   →
                 </span>
               </a>

@@ -22,8 +22,8 @@ const beliefs = [
     body: "We are paid when the dollar is saved, the deal is opened, or the hour is reclaimed. Not when the slideware is delivered. Every engagement is anchored to a measurable result the business cares about.",
   },
   {
-    title: "Small firms ship better software.",
-    body: "We are deliberately small. Fewer hands. Fewer handoffs. Senior people on every part of the work. The kind of firm we would want to hire ourselves.",
+    title: "Living at the cutting edge.",
+    body: "We work where AI and innovation meet — closer to the frontier than to the consensus. The models, frameworks, and infrastructure we build on are the same ones reshaping the field; we ship them in production while most firms are still reading the papers.",
   },
 ];
 
@@ -42,20 +42,27 @@ export default function AboutPage() {
       <section className="px-6 md:px-10 pt-20 md:pt-28 pb-16 md:pb-20">
         <div className="mx-auto max-w-[1320px]">
           <Reveal>
-            <p className="eyebrow-accent mb-6">/ About</p>
+            <div className="inline-flex items-center gap-3 mb-8 rounded-full border border-ember/35 bg-ember/8 pl-3 pr-4 py-1.5">
+              <span className="inline-flex h-1.5 w-1.5 rounded-full bg-ember" />
+              <span className="font-mono text-[10.5px] tracking-[0.18em] uppercase text-ember">
+                The intersection of AI &amp; innovation
+              </span>
+            </div>
           </Reveal>
           <Reveal delay={0.05}>
             <h1 className="display-tight text-[clamp(48px,8vw,120px)] text-ink max-w-[20ch]">
-              A small firm, unusually serious about software.
+              Unusually serious about software.
             </h1>
           </Reveal>
           <Reveal delay={0.15}>
             <p className="mt-10 max-w-[64ch] text-[18px] md:text-[20px] leading-[1.6] text-graphite">
-              AlienAI builds production AI applications for businesses. We are
-              deliberately small, deliberately quiet, and deliberately careful
-              about the work we agree to take on. We do one thing — write
-              software that makes our clients quietly more capable — and we
-              orient everything else around doing it well.
+              AlienAI builds production AI applications for businesses living
+              at the leading edge of what software can do. We operate where AI
+              and innovation meet — building systems that wouldn&rsquo;t have
+              been possible last year, on infrastructure still being invented
+              this year. We do one thing — write software that makes our
+              clients quietly more capable — and we orient everything else
+              around doing it well.
             </p>
           </Reveal>
         </div>
@@ -67,7 +74,7 @@ export default function AboutPage() {
             {beliefs.map((b, i) => (
               <Reveal key={b.title} delay={0.06 + i * 0.05}>
                 <article className="flex flex-col gap-3">
-                  <span className="font-mono text-[10.5px] tracking-[0.22em] uppercase text-terracotta-deep">
+                  <span className="font-mono text-[10.5px] tracking-[0.22em] uppercase text-ember-deep">
                     {String(i + 1).padStart(2, "0")} · Belief
                   </span>
                   <h2 className="display text-[26px] md:text-[34px] leading-[1.1] text-ink">
@@ -126,7 +133,7 @@ export default function AboutPage() {
           <Reveal delay={0.1}>
             <Link
               href="/contact/"
-              className="inline-flex items-center justify-between gap-3 bg-parchment text-ink rounded-full pl-7 pr-3 py-3.5 text-[15.5px] font-medium no-underline hover:bg-terracotta transition-colors group whitespace-nowrap"
+              className="inline-flex items-center justify-between gap-3 bg-parchment text-ink rounded-full pl-7 pr-3 py-3.5 text-[15.5px] font-medium no-underline hover:bg-ember transition-colors group whitespace-nowrap"
             >
               <span>Work with us</span>
               <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-ink text-parchment">

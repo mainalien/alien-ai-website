@@ -38,7 +38,7 @@ export function SiteHeader() {
 
           <a
             href="mailto:aliens@alienai.llc"
-            className="inline-flex items-center gap-2 rounded-full bg-ink text-parchment px-4 md:px-5 py-2 md:py-2.5 font-mono text-[11px] tracking-[0.16em] uppercase no-underline hover:bg-terracotta-deep transition-colors"
+            className="inline-flex items-center gap-2 rounded-full bg-ink text-parchment px-4 md:px-5 py-2 md:py-2.5 font-mono text-[11px] tracking-[0.16em] uppercase no-underline hover:bg-ember-deep transition-colors"
           >
             Start a project
             <span aria-hidden>→</span>

@@ -68,7 +68,7 @@ export function Areas() {
                   <span className="font-mono text-[10.5px] tracking-[0.2em] uppercase text-graphite-soft">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <span className="inline-block h-[2px] w-7 bg-terracotta opacity-90" />
+                  <span className="inline-block h-[2px] w-7 bg-ember opacity-90" />
                 </div>
                 <h3 className="display text-[22px] md:text-[26px] text-ink leading-[1.1]">
                   {a.name}

@@ -51,10 +51,10 @@ export default function ContactPage() {
             <Reveal delay={0.2}>
               <a
                 href="mailto:aliens@alienai.llc?subject=New%20project%20inquiry"
-                className="inline-flex items-center justify-between gap-3 bg-ink text-parchment rounded-full pl-7 pr-3 py-3.5 text-[16px] md:text-[18px] font-medium no-underline hover:bg-terracotta-deep transition-colors group w-fit"
+                className="inline-flex items-center justify-between gap-3 bg-ink text-parchment rounded-full pl-7 pr-3 py-3.5 text-[16px] md:text-[18px] font-medium no-underline hover:bg-ember-deep transition-colors group w-fit"
               >
                 <span>aliens@alienai.llc</span>
-                <span className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-parchment text-ink group-hover:text-terracotta-deep transition-colors">
+                <span className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-parchment text-ink group-hover:text-ember-deep transition-colors">
                   →
                 </span>
               </a>
@@ -90,7 +90,7 @@ export default function ContactPage() {
           <div className="rounded-3xl bg-ink text-parchment p-10 md:p-16">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
               <div>
-                <p className="font-mono text-[10.5px] tracking-[0.22em] uppercase text-terracotta mb-3">
+                <p className="font-mono text-[10.5px] tracking-[0.22em] uppercase text-ember mb-3">
                   / Direct
                 </p>
                 <p className="display text-[20px] md:text-[24px] leading-[1.2] text-parchment">
@@ -101,7 +101,7 @@ export default function ContactPage() {
                 </p>
               </div>
               <div>
-                <p className="font-mono text-[10.5px] tracking-[0.22em] uppercase text-terracotta mb-3">
+                <p className="font-mono text-[10.5px] tracking-[0.22em] uppercase text-ember mb-3">
                   / Locale
                 </p>
                 <p className="display text-[20px] md:text-[24px] leading-[1.2] text-parchment">
@@ -112,7 +112,7 @@ export default function ContactPage() {
                 </p>
               </div>
               <div>
-                <p className="font-mono text-[10.5px] tracking-[0.22em] uppercase text-terracotta mb-3">
+                <p className="font-mono text-[10.5px] tracking-[0.22em] uppercase text-ember mb-3">
                   / Office hours
                 </p>
                 <p className="display text-[20px] md:text-[24px] leading-[1.2] text-parchment">

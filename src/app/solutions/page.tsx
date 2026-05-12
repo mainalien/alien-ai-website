@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const families = [
   {
     family: "Revenue",
-    accent: "terracotta",
+    accent: "ember",
     headline: "Pipeline that fills itself.",
     body: "AI that researches accounts, drafts personalized outbound, qualifies inbound, and triages your pipeline continuously — so your reps wake up to a pre-prioritized day instead of a blank CRM.",
     deliverables: [
@@ -25,7 +25,7 @@ const families = [
   },
   {
     family: "Cost",
-    accent: "terracotta",
+    accent: "ember",
     headline: "A 24/7 first line for the work no one wants to do.",
     body: "Domain-tuned support, billing, and back-office agents that resolve 60–80% of repetitive work autonomously, with a clean human handoff for the rest. Built around your systems and your SOPs — not a generic chatbot.",
     deliverables: [
@@ -53,7 +53,7 @@ const families = [
   },
   {
     family: "Decisions",
-    accent: "terracotta",
+    accent: "ember",
     headline: "Calibrated judgment on the choices that compound.",
     body: "Forecasting, pricing, and risk systems built on your data and evaluated against your outcomes — not against benchmarks. Deployed with the observability and rollback tooling your business actually needs to trust them in production.",
     deliverables: [
@@ -67,7 +67,7 @@ const families = [
   },
   {
     family: "People",
-    accent: "terracotta",
+    accent: "ember",
     headline: "A private copilot that knows your business.",
     body: "Internal answer engines and copilots wired into the systems your team actually uses — Slack, email, your data warehouse, your knowledge base — so the right answer reaches the right person without another meeting.",
     deliverables: [
@@ -96,12 +96,12 @@ const families = [
 ];
 
 const accentClass: Record<string, string> = {
-  terracotta: "text-terracotta-deep",
+  ember: "text-ember-deep",
   ink: "text-ink",
 };
 
 const accentBg: Record<string, string> = {
-  terracotta: "bg-terracotta",
+  ember: "bg-ember",
   ink: "bg-ink",
 };
 
@@ -174,7 +174,7 @@ export default function SolutionsPage() {
         <div className="mx-auto max-w-[1320px]">
           <div className="rounded-3xl bg-ink text-parchment p-10 md:p-16 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
             <div>
-              <p className="font-mono text-[11px] tracking-[0.18em] uppercase text-terracotta mb-4">
+              <p className="font-mono text-[11px] tracking-[0.18em] uppercase text-ember mb-4">
                 / Doesn&rsquo;t fit?
               </p>
               <h2 className="display text-[28px] md:text-[40px] leading-[1.1] text-parchment max-w-[24ch]">
@@ -183,7 +183,7 @@ export default function SolutionsPage() {
             </div>
             <Link
               href="/contact/"
-              className="inline-flex items-center justify-between gap-3 bg-parchment text-ink rounded-full pl-7 pr-3 py-3.5 text-[15.5px] font-medium no-underline hover:bg-terracotta hover:text-ink transition-colors group whitespace-nowrap"
+              className="inline-flex items-center justify-between gap-3 bg-parchment text-ink rounded-full pl-7 pr-3 py-3.5 text-[15.5px] font-medium no-underline hover:bg-ember hover:text-ink transition-colors group whitespace-nowrap"
             >
               <span>Tell us what you need</span>
               <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-ink text-parchment group-hover:bg-ink">

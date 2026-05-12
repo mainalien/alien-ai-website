@@ -54,7 +54,7 @@ export function Outcomes() {
             <Reveal key={o.family} delay={0.08 + i * 0.07}>
               <article className="flex flex-col gap-6 h-full">
                 <div className="flex items-center gap-3">
-                  <span className="inline-block h-2 w-2 rounded-full bg-terracotta" />
+                  <span className="inline-block h-2 w-2 rounded-full bg-ember" />
                   <span className="font-mono text-[11px] tracking-[0.2em] uppercase text-graphite">
                     {o.family}
                   </span>
@@ -73,7 +73,7 @@ export function Outcomes() {
                     </li>
                   ))}
                 </ul>
-                <p className="mt-auto pt-4 border-t border-ink/10 text-[13.5px] leading-[1.55] text-graphite italic">
+                <p className="mt-auto pt-4 border-t border-ember/40 text-[13.5px] leading-[1.55] text-graphite italic">
                   {o.proof}
                 </p>
               </article>

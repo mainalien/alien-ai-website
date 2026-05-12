@@ -20,7 +20,7 @@ const metrics = [
 const stories = [
   {
     sector: "Industrial distribution",
-    accent: "terracotta",
+    accent: "ember",
     title: "A quote desk that wrote its own quotes overnight.",
     summary:
       "Replaced the slowest part of a B2B distributor's revenue cycle — manual quote generation against tens of thousands of SKUs — with a domain-tuned system that drafts a customer-ready quote in under 30 seconds, including pricing rules, inventory, and freight.",
@@ -32,7 +32,7 @@ const stories = [
   },
   {
     sector: "Financial services",
-    accent: "terracotta",
+    accent: "ember",
     title: "A claims-review pipeline calibrated to the regulator, not the demo.",
     summary:
       "Built a document-intelligence pipeline that triages claims documentation, extracts the right fields, scores risk, and routes the ambiguous cases to the right human reviewer — with confidence scores, citations, and a full evaluation harness against historical outcomes.",
@@ -57,11 +57,11 @@ const stories = [
 ];
 
 const accentBg: Record<string, string> = {
-  terracotta: "bg-terracotta",
+  ember: "bg-ember",
   ink: "bg-ink",
 };
 const accentText: Record<string, string> = {
-  terracotta: "text-terracotta-deep",
+  ember: "text-ember-deep",
   ink: "text-ink",
 };
 
@@ -167,7 +167,7 @@ export default function ResultsPage() {
             </h2>
             <Link
               href="/contact/"
-              className="inline-flex items-center justify-between gap-3 bg-parchment text-ink rounded-full pl-7 pr-3 py-3.5 text-[15.5px] font-medium no-underline hover:bg-terracotta hover:text-ink transition-colors group whitespace-nowrap"
+              className="inline-flex items-center justify-between gap-3 bg-parchment text-ink rounded-full pl-7 pr-3 py-3.5 text-[15.5px] font-medium no-underline hover:bg-ember hover:text-ink transition-colors group whitespace-nowrap"
             >
               <span>Start a conversation</span>
               <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-ink text-parchment">

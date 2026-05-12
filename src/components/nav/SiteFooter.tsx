@@ -13,8 +13,9 @@ export function SiteFooter() {
               Higher order intelligence for business.
             </p>
             <p className="text-[14.5px] leading-[1.6] text-graphite max-w-[40ch]">
-              We build production AI software that quietly compounds — earning back the
-              hours, the dollars, and the attention your business deserves to keep.
+              We live at the intersection of AI and innovation — building
+              production systems that quietly compound and earn back the
+              hours, dollars, and attention your business deserves to keep.
             </p>
           </div>
 
@@ -23,19 +24,19 @@ export function SiteFooter() {
               <p className="font-mono text-[10px] tracking-[0.2em] uppercase text-graphite-soft">
                 Site
               </p>
-              <Link href="/" className="text-ink hover:text-terracotta-deep no-underline text-[14.5px]">
+              <Link href="/" className="text-ink hover:text-ember-deep no-underline text-[14.5px]">
                 Home
               </Link>
-              <Link href="/solutions/" className="text-ink hover:text-terracotta-deep no-underline text-[14.5px]">
+              <Link href="/solutions/" className="text-ink hover:text-ember-deep no-underline text-[14.5px]">
                 Solutions
               </Link>
-              <Link href="/results/" className="text-ink hover:text-terracotta-deep no-underline text-[14.5px]">
+              <Link href="/results/" className="text-ink hover:text-ember-deep no-underline text-[14.5px]">
                 Results
               </Link>
-              <Link href="/about/" className="text-ink hover:text-terracotta-deep no-underline text-[14.5px]">
+              <Link href="/about/" className="text-ink hover:text-ember-deep no-underline text-[14.5px]">
                 About
               </Link>
-              <Link href="/contact/" className="text-ink hover:text-terracotta-deep no-underline text-[14.5px]">
+              <Link href="/contact/" className="text-ink hover:text-ember-deep no-underline text-[14.5px]">
                 Contact
               </Link>
             </div>
@@ -46,7 +47,7 @@ export function SiteFooter() {
               </p>
               <a
                 href="mailto:aliens@alienai.llc"
-                className="text-ink hover:text-terracotta-deep no-underline text-[14.5px]"
+                className="text-ink hover:text-ember-deep no-underline text-[14.5px]"
               >
                 aliens@alienai.llc
               </a>

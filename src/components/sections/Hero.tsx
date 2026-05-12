@@ -4,10 +4,10 @@ export function Hero() {
       <div className="paper absolute inset-0 -z-10 opacity-60" aria-hidden />
 
       <div className="mx-auto max-w-[1320px]">
-        <div className="inline-flex items-center gap-3 mb-6 md:mb-10">
-          <span className="inline-flex h-2 w-2 rounded-full bg-terracotta" />
-          <span className="eyebrow text-graphite">
-            Custom AI software, built for production
+        <div className="inline-flex items-center gap-3 mb-6 md:mb-10 rounded-full border border-ember/35 bg-ember/8 pl-3 pr-4 py-1.5">
+          <span className="inline-flex h-1.5 w-1.5 rounded-full bg-ember" />
+          <span className="font-mono text-[10.5px] tracking-[0.18em] uppercase text-ember">
+            At the intersection of AI &amp; innovation
           </span>
         </div>
 
@@ -21,17 +21,18 @@ export function Hero() {
           <p className="md:col-span-7 text-[17px] md:text-[22px] leading-[1.5] text-graphite">
             AlienAI builds custom AI software systems that automate revenue,
             reduce operating costs, and compound the productivity of every
-            team they touch. Quietly engineered. Deliberately deployed.
-            Built to operate without you.
+            team they touch. Built at the leading edge of what AI can do —
+            quietly engineered, deliberately deployed, designed to operate
+            without you.
           </p>
 
           <div className="md:col-span-5 flex flex-col gap-3">
             <a
               href="mailto:aliens@alienai.llc"
-              className="inline-flex items-center justify-between gap-3 bg-ink text-parchment rounded-full pl-6 pr-3 py-3 text-[15px] font-medium no-underline hover:bg-terracotta-deep transition-colors group"
+              className="inline-flex items-center justify-between gap-3 bg-ink text-parchment rounded-full pl-6 pr-3 py-3 text-[15px] font-medium no-underline hover:bg-ember-deep transition-colors group"
             >
               <span>Start a project</span>
-              <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-parchment text-ink group-hover:bg-parchment group-hover:text-terracotta-deep transition-colors">
+              <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-parchment text-ink group-hover:bg-parchment group-hover:text-ember-deep transition-colors">
                 →
               </span>
             </a>

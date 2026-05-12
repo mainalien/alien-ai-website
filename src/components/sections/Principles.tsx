@@ -26,7 +26,7 @@ export function Principles() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-16">
           <div className="md:col-span-4 mb-2 md:mb-0">
             <Reveal>
-              <p className="font-mono text-[11px] tracking-[0.18em] uppercase text-terracotta mb-5">
+              <p className="font-mono text-[11px] tracking-[0.18em] uppercase text-ember mb-5">
                 / How we work
               </p>
             </Reveal>
