@@ -2,20 +2,20 @@ import { Reveal } from "@/components/primitives/Reveal";
 
 export function ClosingCTA() {
   return (
-    <section className="px-6 md:px-10 py-28 md:py-36 bg-parchment">
+    <section className="px-6 md:px-10 py-14 md:py-36 bg-parchment">
       <div className="mx-auto max-w-[1320px]">
-        <div className="rounded-3xl bg-linen border border-ink/12 p-10 md:p-16 lg:p-20 relative overflow-hidden">
+        <div className="rounded-3xl bg-linen border border-ink/12 p-7 md:p-16 lg:p-20 relative overflow-hidden">
           <div
             aria-hidden
             className="absolute -top-32 -right-24 w-[420px] h-[420px] rounded-full opacity-30 blur-3xl"
             style={{ background: "radial-gradient(closest-side, var(--color-terracotta), transparent 70%)" }}
           />
           <Reveal>
-            <p className="eyebrow-accent mb-8">/ Start a project</p>
+            <p className="eyebrow-accent mb-5 md:mb-8">/ Start a project</p>
           </Reveal>
 
           <Reveal delay={0.05}>
-            <h2 className="display-tight text-[clamp(40px,8vw,120px)] leading-[0.95] max-w-[18ch] text-ink">
+            <h2 className="display-tight text-[clamp(36px,8vw,120px)] leading-[0.95] max-w-[18ch] text-ink">
               The work you have in mind deserves to be done well.
             </h2>
           </Reveal>
@@ -29,7 +29,7 @@ export function ClosingCTA() {
           </Reveal>
 
           <Reveal delay={0.22}>
-            <div className="mt-12 flex flex-col sm:flex-row gap-4">
+            <div className="mt-8 md:mt-12 flex flex-col sm:flex-row gap-3 md:gap-4">
               <a
                 href="mailto:aliens@alienai.llc"
                 className="inline-flex items-center justify-between gap-3 bg-ink text-parchment rounded-full pl-7 pr-3 py-3.5 text-[15.5px] font-medium no-underline hover:bg-terracotta-deep transition-colors group"

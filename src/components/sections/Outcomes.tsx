@@ -37,19 +37,19 @@ const outcomes = [
 
 export function Outcomes() {
   return (
-    <section className="px-6 md:px-10 py-24 md:py-32 bg-linen/60 border-y border-ink/10">
+    <section className="px-6 md:px-10 py-14 md:py-32 bg-linen/60 border-y border-ink/10">
       <div className="mx-auto max-w-[1320px]">
         <Reveal>
           <p className="eyebrow-accent mb-5">/ What changes</p>
         </Reveal>
 
         <Reveal delay={0.05}>
-          <h2 className="display-tight text-[clamp(40px,6.5vw,88px)] text-ink max-w-[18ch] mb-16 md:mb-20">
+          <h2 className="display-tight text-[clamp(36px,6.5vw,88px)] text-ink max-w-[18ch] mb-8 md:mb-20">
             Revenue up. Cost down. Time back.
           </h2>
         </Reveal>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-10">
           {outcomes.map((o, i) => (
             <Reveal key={o.family} delay={0.08 + i * 0.07}>
               <article className="flex flex-col gap-6 h-full">

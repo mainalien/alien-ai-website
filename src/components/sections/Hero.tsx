@@ -1,46 +1,24 @@
-"use client";
-
-import { motion, useReducedMotion } from "framer-motion";
-
 export function Hero() {
-  const reduce = useReducedMotion();
-  const ease = [0.22, 1, 0.36, 1] as const;
-
   return (
-    <section className="relative px-6 md:px-10 pt-16 md:pt-24 pb-24 md:pb-32 overflow-hidden">
+    <section className="relative px-6 md:px-10 pt-10 md:pt-24 pb-14 md:pb-32 overflow-hidden">
       <div className="paper absolute inset-0 -z-10 opacity-60" aria-hidden />
 
       <div className="mx-auto max-w-[1320px]">
-        <motion.div
-          initial={reduce ? false : { opacity: 0, y: 8 }}
-          animate={reduce ? undefined : { opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease }}
-          className="inline-flex items-center gap-3 mb-10"
-        >
+        <div className="inline-flex items-center gap-3 mb-6 md:mb-10">
           <span className="inline-flex h-2 w-2 rounded-full bg-terracotta" />
           <span className="eyebrow text-graphite">
             Custom AI software, built for production
           </span>
-        </motion.div>
+        </div>
 
-        <motion.h1
-          initial={reduce ? false : { opacity: 0, y: 20 }}
-          animate={reduce ? undefined : { opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, ease, delay: 0.05 }}
-          className="display-tight text-[clamp(56px,11vw,168px)] max-w-[16ch] text-ink"
-        >
+        <h1 className="display-tight text-[clamp(48px,11vw,168px)] max-w-[16ch] text-ink">
           Higher order
           <br />
           intelligence.
-        </motion.h1>
+        </h1>
 
-        <motion.div
-          initial={reduce ? false : { opacity: 0, y: 14 }}
-          animate={reduce ? undefined : { opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease, delay: 0.2 }}
-          className="mt-10 md:mt-14 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-end"
-        >
-          <p className="md:col-span-7 text-[19px] md:text-[22px] leading-[1.5] text-graphite">
+        <div className="mt-8 md:mt-14 grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 items-end">
+          <p className="md:col-span-7 text-[17px] md:text-[22px] leading-[1.5] text-graphite">
             AlienAI builds custom AI software systems that automate revenue,
             reduce operating costs, and compound the productivity of every
             team they touch. Quietly engineered. Deliberately deployed.
@@ -67,14 +45,9 @@ export function Hero() {
               </span>
             </a>
           </div>
-        </motion.div>
+        </div>
 
-        <motion.div
-          initial={reduce ? false : { opacity: 0, y: 10 }}
-          animate={reduce ? undefined : { opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease, delay: 0.35 }}
-          className="mt-20 md:mt-28 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 border-t border-ink/12 pt-10"
-        >
+        <div className="mt-10 md:mt-28 grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-6 md:gap-8 border-t border-ink/12 pt-6 md:pt-10">
           {[
             { label: "Revenue automated", value: "24 / 7" },
             { label: "Hours returned weekly", value: "120 +" },
@@ -82,15 +55,15 @@ export function Hero() {
             { label: "Time-to-production", value: "8 wks" },
           ].map((s) => (
             <div key={s.label} className="flex flex-col gap-1">
-              <span className="metric text-[34px] md:text-[44px] text-ink">
+              <span className="metric text-[28px] md:text-[44px] text-ink">
                 {s.value}
               </span>
-              <span className="font-mono text-[10.5px] tracking-[0.18em] uppercase text-graphite">
+              <span className="font-mono text-[10px] md:text-[10.5px] tracking-[0.18em] uppercase text-graphite">
                 {s.label}
               </span>
             </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );
