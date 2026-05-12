@@ -1,16 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
-  <rect width="1200" height="630" fill="#F4F1EA"/>
-  <g transform="translate(540 215)">
-    <path d="M0 60 C 40 40, 120 40, 160 60" stroke="#0B0B10" stroke-width="3" stroke-linecap="round" fill="none"/>
-    <circle cx="80" cy="30" r="14" fill="#0B0B10"/>
+  <rect width="1200" height="630" fill="#EDE8E2"/>
+  <g transform="translate(80 100)">
+    <rect width="76" height="76" rx="16" fill="#1B1A23"/>
+    <path d="M22 50 L38 22 L54 50" stroke="#EDE8E2" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <line x1="29" y1="42" x2="47" y2="42" stroke="#EDE8E2" stroke-width="3.6" stroke-linecap="round"/>
+    <circle cx="38" cy="60" r="2.8" fill="#D0864A"/>
   </g>
-  <text x="80" y="370" font-family="Georgia, 'Times New Roman', serif" font-size="120" fill="#0B0B10" letter-spacing="-3">
-    <tspan font-style="italic">Intelligence,</tspan>
-  </text>
-  <text x="80" y="490" font-family="Georgia, 'Times New Roman', serif" font-size="120" fill="#0B0B10" letter-spacing="-3">
-    of another order.
-  </text>
-  <text x="80" y="570" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="18" fill="#4A4A52" letter-spacing="3">
-    ALIENAI &#x2014;&#x2014; ALIENAI.LLC
-  </text>
+  <text x="180" y="160" font-family="ui-sans-serif, system-ui, sans-serif" font-size="32" font-weight="700" fill="#1B1A23" letter-spacing="-0.6">alienai</text>
+  <text x="80" y="340" font-family="ui-sans-serif, system-ui, sans-serif" font-size="118" font-weight="700" fill="#1B1A23" letter-spacing="-4">Higher order</text>
+  <text x="80" y="460" font-family="ui-sans-serif, system-ui, sans-serif" font-size="118" font-weight="700" fill="#1B1A23" letter-spacing="-4">intelligence.</text>
+  <text x="80" y="555" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="18" fill="#6F6A62" letter-spacing="4">CUSTOM AI SOFTWARE &#x2014; ALIENAI.LLC</text>
+  <rect x="80" y="585" width="60" height="6" rx="3" fill="#D0864A"/>
 </svg>

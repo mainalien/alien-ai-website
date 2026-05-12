@@ -1,26 +1,25 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono, Instrument_Serif } from "next/font/google";
+import { Bricolage_Grotesque, Inter_Tight, JetBrains_Mono } from "next/font/google";
 import { SiteHeader } from "@/components/nav/SiteHeader";
 import { SiteFooter } from "@/components/nav/SiteFooter";
 import "./globals.css";
 
-const geistSans = Geist({
+const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
-  variable: "--font-geist-sans",
+  variable: "--font-bricolage",
+  display: "swap",
+  axes: ["opsz", "wdth"],
+});
+
+const interTight = Inter_Tight({
+  subsets: ["latin"],
+  variable: "--font-inter-tight",
   display: "swap",
 });
 
-const geistMono = Geist_Mono({
+const jetbrains = JetBrains_Mono({
   subsets: ["latin"],
-  variable: "--font-geist-mono",
-  display: "swap",
-});
-
-const instrumentSerif = Instrument_Serif({
-  subsets: ["latin"],
-  weight: "400",
-  style: ["normal", "italic"],
-  variable: "--font-instrument-serif",
+  variable: "--font-jetbrains",
   display: "swap",
 });
 
@@ -29,15 +28,15 @@ const SITE_URL = "https://www.alienai.llc";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "AlienAI — Intelligence, of another order.",
+    default: "AlienAI — Higher order intelligence for business",
     template: "%s — AlienAI",
   },
   description:
-    "AlienAI builds production AI software for businesses ready to operate differently.",
+    "AlienAI builds custom AI software that automates revenue, reduces operating costs, and compounds the productivity of every team it touches.",
   openGraph: {
-    title: "AlienAI — Intelligence, of another order.",
+    title: "AlienAI — Higher order intelligence for business",
     description:
-      "AlienAI builds production AI software for businesses ready to operate differently.",
+      "Custom AI software that automates revenue, reduces operating costs, and compounds the productivity of every team it touches.",
     url: SITE_URL,
     siteName: "AlienAI",
     type: "website",
@@ -45,9 +44,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AlienAI — Intelligence, of another order.",
+    title: "AlienAI — Higher order intelligence for business",
     description:
-      "AlienAI builds production AI software for businesses ready to operate differently.",
+      "Custom AI software that automates revenue, reduces operating costs, and compounds the productivity of every team it touches.",
     images: ["/og.png"],
   },
   icons: {
@@ -57,7 +56,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#F4F1EA",
+  themeColor: "#EDE8E2",
   width: "device-width",
   initialScale: 1,
 };
@@ -70,7 +69,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${instrumentSerif.variable}`}
+      className={`${bricolage.variable} ${interTight.variable} ${jetbrains.variable}`}
     >
       <body className="min-h-screen flex flex-col">
         <SiteHeader />

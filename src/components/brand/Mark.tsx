@@ -17,23 +17,27 @@ export function Mark({ className, size = 28, title = "AlienAI mark" }: Props) {
       xmlns="http://www.w3.org/2000/svg"
     >
       <title>{title}</title>
-      <path
-        d="M4 30 C 14 26, 34 26, 44 30"
-        stroke="currentColor"
-        strokeWidth="1.6"
-        strokeLinecap="round"
-      />
-      <circle cx="24" cy="20" r="5.5" fill="currentColor" />
-      <line
-        x1="24"
-        y1="34"
-        x2="24"
-        y2="40"
-        stroke="currentColor"
-        strokeWidth="1.6"
-        strokeLinecap="round"
-        opacity="0.45"
-      />
+      <rect x="2" y="2" width="44" height="44" rx="10" fill="currentColor" />
+      <g transform="translate(0 0)">
+        <path
+          d="M14 30 L24 14 L34 30"
+          stroke="var(--color-parchment, #EDE8E2)"
+          strokeWidth="2.2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          fill="none"
+        />
+        <line
+          x1="18.5"
+          y1="25"
+          x2="29.5"
+          y2="25"
+          stroke="var(--color-parchment, #EDE8E2)"
+          strokeWidth="2.2"
+          strokeLinecap="round"
+        />
+        <circle cx="24" cy="36" r="1.6" fill="var(--color-terracotta, #D0864A)" />
+      </g>
     </svg>
   );
 }

@@ -4,51 +4,72 @@ import { Wordmark } from "@/components/brand/Wordmark";
 export function SiteFooter() {
   const year = new Date().getFullYear();
   return (
-    <footer className="px-6 md:px-10 pb-10 pt-24 md:pt-32">
-      <div className="mx-auto max-w-[1240px]">
-        <div className="rule mb-10" />
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8">
-          <div className="flex flex-col gap-3">
+    <footer className="px-6 md:px-10 pb-12 pt-24 md:pt-32 bg-linen/50 border-t border-inkwell/10">
+      <div className="mx-auto max-w-[1320px]">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-12">
+          <div className="md:col-span-5 flex flex-col gap-4">
             <Wordmark size="md" />
-            <p className="font-mono text-[11px] tracking-[0.16em] uppercase text-graphite">
-              Intelligence, of another order.
+            <p className="display text-[22px] md:text-[26px] max-w-[20ch] leading-[1.1] text-inkwell">
+              Higher order intelligence for business.
+            </p>
+            <p className="text-[14.5px] leading-[1.6] text-graphite max-w-[40ch]">
+              We build production AI software that quietly compounds — earning back the
+              hours, the dollars, and the attention your business deserves to keep.
             </p>
           </div>
 
-          <div className="flex flex-col md:flex-row md:items-end gap-6 md:gap-12 font-mono text-[12px] tracking-[0.12em] uppercase text-graphite">
-            <div className="flex flex-col gap-1">
-              <span className="text-graphite-soft text-[10px] tracking-[0.18em]">
-                Inquiries
-              </span>
+          <div className="md:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-8 md:gap-10">
+            <div className="flex flex-col gap-3">
+              <p className="font-mono text-[10px] tracking-[0.2em] uppercase text-graphite-soft">
+                Site
+              </p>
+              <Link href="/" className="text-inkwell hover:text-terracotta-deep no-underline text-[14.5px]">
+                Home
+              </Link>
+              <Link href="/solutions/" className="text-inkwell hover:text-terracotta-deep no-underline text-[14.5px]">
+                Solutions
+              </Link>
+              <Link href="/results/" className="text-inkwell hover:text-terracotta-deep no-underline text-[14.5px]">
+                Results
+              </Link>
+              <Link href="/about/" className="text-inkwell hover:text-terracotta-deep no-underline text-[14.5px]">
+                About
+              </Link>
+              <Link href="/contact/" className="text-inkwell hover:text-terracotta-deep no-underline text-[14.5px]">
+                Contact
+              </Link>
+            </div>
+
+            <div className="flex flex-col gap-3">
+              <p className="font-mono text-[10px] tracking-[0.2em] uppercase text-graphite-soft">
+                Contact
+              </p>
               <a
                 href="mailto:aliens@alienai.llc"
-                className="text-ink hover:text-halo transition-colors no-underline normal-case tracking-normal font-sans text-[14px]"
+                className="text-inkwell hover:text-terracotta-deep no-underline text-[14.5px]"
               >
                 aliens@alienai.llc
               </a>
+              <p className="text-graphite text-[13px]">
+                Replies within one business day.
+              </p>
             </div>
-            <div className="flex flex-col gap-1">
-              <span className="text-graphite-soft text-[10px] tracking-[0.18em]">
-                Pages
-              </span>
-              <div className="flex gap-5 normal-case tracking-normal font-sans text-[14px]">
-                <Link href="/" className="text-ink hover:text-halo no-underline">
-                  Home
-                </Link>
-                <Link href="/about/" className="text-ink hover:text-halo no-underline">
-                  About
-                </Link>
-                <Link href="/contact/" className="text-ink hover:text-halo no-underline">
-                  Contact
-                </Link>
-              </div>
+
+            <div className="flex flex-col gap-3">
+              <p className="font-mono text-[10px] tracking-[0.2em] uppercase text-graphite-soft">
+                Operating
+              </p>
+              <p className="text-inkwell text-[14.5px]">United States &amp; remote.</p>
+              <p className="text-graphite text-[13px]">
+                Engagements available globally.
+              </p>
             </div>
           </div>
         </div>
 
-        <div className="mt-10 flex items-center justify-between font-mono text-[10px] tracking-[0.18em] uppercase text-graphite-soft">
-          <span>© {year} AlienAI LLC</span>
-          <span>Built with intent.</span>
+        <div className="mt-14 pt-6 border-t border-inkwell/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 font-mono text-[10.5px] tracking-[0.18em] uppercase text-graphite-soft">
+          <span>© {year} AlienAI LLC. All rights reserved.</span>
+          <span>Higher order intelligence — engineered to operate.</span>
         </div>
       </div>
     </footer>
