@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
   <rect width="1200" height="630" fill="#F0E7D6"/>
   <g transform="translate(80 100)">
-    <rect width="76" height="76" rx="14" fill="#28231F"/>
+    <rect width="76" height="76" rx="14" fill="#11182E"/>
     <path d="M22 52 L38 22 L54 52" stroke="#F0E7D6" stroke-width="3.8" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
     <line x1="29" y1="42" x2="47" y2="42" stroke="#F0E7D6" stroke-width="3.8" stroke-linecap="square"/>
   </g>
-  <text x="180" y="158" font-family="ui-sans-serif, system-ui, sans-serif" font-size="34" font-weight="800" fill="#28231F" letter-spacing="-1.5">alienai</text>
-  <text x="80" y="340" font-family="ui-sans-serif, system-ui, sans-serif" font-size="116" font-weight="700" fill="#28231F" letter-spacing="-4">Higher order</text>
-  <text x="80" y="458" font-family="ui-sans-serif, system-ui, sans-serif" font-size="116" font-weight="700" fill="#28231F" letter-spacing="-4">intelligence.</text>
-  <text x="80" y="555" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="18" fill="#7A7268" letter-spacing="4">CUSTOM AI SOFTWARE SYSTEMS &#x2014; ALIENAI.LLC</text>
+  <text x="180" y="158" font-family="ui-sans-serif, system-ui, sans-serif" font-size="34" font-weight="800" fill="#11182E" letter-spacing="-1.5">alienai</text>
+  <text x="80" y="340" font-family="ui-sans-serif, system-ui, sans-serif" font-size="116" font-weight="700" fill="#11182E" letter-spacing="-4">Higher order</text>
+  <text x="80" y="458" font-family="ui-sans-serif, system-ui, sans-serif" font-size="116" font-weight="700" fill="#11182E" letter-spacing="-4">intelligence.</text>
+  <text x="80" y="555" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="18" fill="#6F7287" letter-spacing="4">CUSTOM AI SOFTWARE SYSTEMS &#x2014; ALIENAI.LLC</text>
   <rect x="80" y="585" width="60" height="4" rx="2" fill="#D0864A"/>
 </svg>
