@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-  --color-parchment: #ede8e2;
-  --color-linen: #e4dccf;
-  --color-ink: #1f1b1a;
-  --color-ink-soft: #2d2826;
-  --color-graphite: #4a4540;
-  --color-graphite-soft: #6f6a62;
+  --color-parchment: #f0e7d6;
+  --color-linen: #e6d7bd;
+  --color-ink: #28231f;
+  --color-ink-soft: #3a342f;
+  --color-graphite: #57504a;
+  --color-graphite-soft: #7a7268;
   --color-terracotta: #d0864a;
   --color-terracotta-deep: #b06a32;
 
