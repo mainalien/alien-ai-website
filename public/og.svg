@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#F4F1EA"/>
+  <g transform="translate(540 215)">
+    <path d="M0 60 C 40 40, 120 40, 160 60" stroke="#0B0B10" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <circle cx="80" cy="30" r="14" fill="#0B0B10"/>
+  </g>
+  <text x="80" y="370" font-family="Georgia, 'Times New Roman', serif" font-size="120" fill="#0B0B10" letter-spacing="-3">
+    <tspan font-style="italic">Intelligence,</tspan>
+  </text>
+  <text x="80" y="490" font-family="Georgia, 'Times New Roman', serif" font-size="120" fill="#0B0B10" letter-spacing="-3">
+    of another order.
+  </text>
+  <text x="80" y="570" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="18" fill="#4A4A52" letter-spacing="3">
+    ALIENAI &#x2014;&#x2014; ALIENAI.LLC
+  </text>
+</svg>

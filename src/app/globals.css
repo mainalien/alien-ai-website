@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #0b0b10;
+  --color-bone: #f4f1ea;
+  --color-mist: #e4dfd3;
+  --color-graphite: #4a4a52;
+  --color-graphite-soft: #6d6d76;
+  --color-halo: #6e5bff;
+
+  --font-display: var(--font-instrument-serif), "Times New Roman", serif;
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, "JetBrains Mono",
+    "SFMono-Regular", Menlo, monospace;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  background-color: var(--color-bone);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background-color: var(--color-bone);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-feature-settings: "ss01", "cv11";
+  letter-spacing: -0.005em;
+}
+
+::selection {
+  background: var(--color-ink);
+  color: var(--color-bone);
+}
+
+a {
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-halo);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+.display {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-graphite);
+}
+
+.rule {
+  height: 1px;
+  background: color-mix(in oklab, var(--color-ink) 12%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
