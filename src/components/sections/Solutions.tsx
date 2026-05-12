@@ -55,7 +55,7 @@ export function Solutions() {
 
         <Reveal delay={0.05}>
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-16 md:mb-20 items-end">
-            <h2 className="md:col-span-8 display-tight text-[clamp(40px,6.5vw,88px)] text-inkwell">
+            <h2 className="md:col-span-8 display-tight text-[clamp(40px,6.5vw,88px)] text-ink">
               Six families of software, all engineered to operate.
             </h2>
             <p className="md:col-span-4 text-[16px] leading-[1.65] text-graphite">
@@ -69,7 +69,7 @@ export function Solutions() {
         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
           {solutions.map((s, i) => (
             <Reveal key={s.index} as="li" delay={0.06 + (i % 3) * 0.05}>
-              <article className="card rounded-2xl p-7 md:p-8 h-full flex flex-col gap-5 transition-colors hover:border-inkwell/20">
+              <article className="card rounded-2xl p-7 md:p-8 h-full flex flex-col gap-5 transition-colors hover:border-ink/20">
                 <div className="flex items-baseline justify-between">
                   <span className="font-mono text-[11px] tracking-[0.18em] uppercase text-terracotta-deep">
                     {s.family}
@@ -78,7 +78,7 @@ export function Solutions() {
                     {s.index}
                   </span>
                 </div>
-                <h3 className="display text-[24px] md:text-[28px] leading-[1.1] text-inkwell">
+                <h3 className="display text-[24px] md:text-[28px] leading-[1.1] text-ink">
                   {s.title}
                 </h3>
                 <p className="text-[15px] leading-[1.65] text-graphite flex-1">
@@ -88,7 +88,7 @@ export function Solutions() {
                   {s.chips.map((c) => (
                     <li
                       key={c}
-                      className="font-mono text-[10.5px] tracking-[0.12em] uppercase px-2.5 py-1 rounded-full bg-inkwell/6 text-inkwell-soft"
+                      className="font-mono text-[10.5px] tracking-[0.12em] uppercase px-2.5 py-1 rounded-full bg-ink/6 text-ink-soft"
                     >
                       {c}
                     </li>

@@ -4,12 +4,12 @@ import { Wordmark } from "@/components/brand/Wordmark";
 export function SiteFooter() {
   const year = new Date().getFullYear();
   return (
-    <footer className="px-6 md:px-10 pb-12 pt-24 md:pt-32 bg-linen/50 border-t border-inkwell/10">
+    <footer className="px-6 md:px-10 pb-12 pt-24 md:pt-32 bg-linen/50 border-t border-ink/10">
       <div className="mx-auto max-w-[1320px]">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-12">
           <div className="md:col-span-5 flex flex-col gap-4">
             <Wordmark size="md" />
-            <p className="display text-[22px] md:text-[26px] max-w-[20ch] leading-[1.1] text-inkwell">
+            <p className="display text-[22px] md:text-[26px] max-w-[20ch] leading-[1.1] text-ink">
               Higher order intelligence for business.
             </p>
             <p className="text-[14.5px] leading-[1.6] text-graphite max-w-[40ch]">
@@ -23,19 +23,19 @@ export function SiteFooter() {
               <p className="font-mono text-[10px] tracking-[0.2em] uppercase text-graphite-soft">
                 Site
               </p>
-              <Link href="/" className="text-inkwell hover:text-terracotta-deep no-underline text-[14.5px]">
+              <Link href="/" className="text-ink hover:text-terracotta-deep no-underline text-[14.5px]">
                 Home
               </Link>
-              <Link href="/solutions/" className="text-inkwell hover:text-terracotta-deep no-underline text-[14.5px]">
+              <Link href="/solutions/" className="text-ink hover:text-terracotta-deep no-underline text-[14.5px]">
                 Solutions
               </Link>
-              <Link href="/results/" className="text-inkwell hover:text-terracotta-deep no-underline text-[14.5px]">
+              <Link href="/results/" className="text-ink hover:text-terracotta-deep no-underline text-[14.5px]">
                 Results
               </Link>
-              <Link href="/about/" className="text-inkwell hover:text-terracotta-deep no-underline text-[14.5px]">
+              <Link href="/about/" className="text-ink hover:text-terracotta-deep no-underline text-[14.5px]">
                 About
               </Link>
-              <Link href="/contact/" className="text-inkwell hover:text-terracotta-deep no-underline text-[14.5px]">
+              <Link href="/contact/" className="text-ink hover:text-terracotta-deep no-underline text-[14.5px]">
                 Contact
               </Link>
             </div>
@@ -46,7 +46,7 @@ export function SiteFooter() {
               </p>
               <a
                 href="mailto:aliens@alienai.llc"
-                className="text-inkwell hover:text-terracotta-deep no-underline text-[14.5px]"
+                className="text-ink hover:text-terracotta-deep no-underline text-[14.5px]"
               >
                 aliens@alienai.llc
               </a>
@@ -59,7 +59,7 @@ export function SiteFooter() {
               <p className="font-mono text-[10px] tracking-[0.2em] uppercase text-graphite-soft">
                 Operating
               </p>
-              <p className="text-inkwell text-[14.5px]">United States &amp; remote.</p>
+              <p className="text-ink text-[14.5px]">United States &amp; remote.</p>
               <p className="text-graphite text-[13px]">
                 Engagements available globally.
               </p>
@@ -67,7 +67,7 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <div className="mt-14 pt-6 border-t border-inkwell/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 font-mono text-[10.5px] tracking-[0.18em] uppercase text-graphite-soft">
+        <div className="mt-14 pt-6 border-t border-ink/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 font-mono text-[10.5px] tracking-[0.18em] uppercase text-graphite-soft">
           <span>© {year} AlienAI LLC. All rights reserved.</span>
           <span>Higher order intelligence — engineered to operate.</span>
         </div>

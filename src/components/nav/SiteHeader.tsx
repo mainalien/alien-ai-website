@@ -10,12 +10,12 @@ const navLinks = [
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-30 backdrop-blur-md bg-parchment/80 border-b border-inkwell/8">
+    <header className="sticky top-0 z-30 backdrop-blur-md bg-parchment/80 border-b border-ink/8">
       <div className="px-6 md:px-10 py-4 md:py-5">
         <div className="mx-auto max-w-[1320px] flex items-center justify-between gap-6">
           <Link
             href="/"
-            className="inline-flex items-center text-inkwell no-underline"
+            className="inline-flex items-center text-ink no-underline"
             aria-label="AlienAI — home"
           >
             <Wordmark size="md" />
@@ -27,7 +27,7 @@ export function SiteHeader() {
                 <li key={l.href}>
                   <Link
                     href={l.href}
-                    className="hover:text-inkwell transition-colors no-underline"
+                    className="hover:text-ink transition-colors no-underline"
                   >
                     {l.label}
                   </Link>
@@ -38,7 +38,7 @@ export function SiteHeader() {
 
           <a
             href="mailto:aliens@alienai.llc"
-            className="inline-flex items-center gap-2 rounded-full bg-inkwell text-parchment px-4 md:px-5 py-2 md:py-2.5 font-mono text-[11px] tracking-[0.16em] uppercase no-underline hover:bg-terracotta-deep transition-colors"
+            className="inline-flex items-center gap-2 rounded-full bg-ink text-parchment px-4 md:px-5 py-2 md:py-2.5 font-mono text-[11px] tracking-[0.16em] uppercase no-underline hover:bg-terracotta-deep transition-colors"
           >
             Start a project
             <span aria-hidden>→</span>

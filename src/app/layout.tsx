@@ -1,25 +1,18 @@
 import type { Metadata, Viewport } from "next";
-import { Bricolage_Grotesque, Inter_Tight, JetBrains_Mono } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import { SiteHeader } from "@/components/nav/SiteHeader";
 import { SiteFooter } from "@/components/nav/SiteFooter";
 import "./globals.css";
 
-const bricolage = Bricolage_Grotesque({
+const geistSans = Geist({
   subsets: ["latin"],
-  variable: "--font-bricolage",
-  display: "swap",
-  axes: ["opsz", "wdth"],
-});
-
-const interTight = Inter_Tight({
-  subsets: ["latin"],
-  variable: "--font-inter-tight",
+  variable: "--font-geist-sans",
   display: "swap",
 });
 
-const jetbrains = JetBrains_Mono({
+const geistMono = Geist_Mono({
   subsets: ["latin"],
-  variable: "--font-jetbrains",
+  variable: "--font-geist-mono",
   display: "swap",
 });
 
@@ -32,11 +25,11 @@ export const metadata: Metadata = {
     template: "%s — AlienAI",
   },
   description:
-    "AlienAI builds custom AI software that automates revenue, reduces operating costs, and compounds the productivity of every team it touches.",
+    "AlienAI builds custom AI software systems that automate revenue, reduce operating costs, and compound the productivity of every team they touch.",
   openGraph: {
     title: "AlienAI — Higher order intelligence for business",
     description:
-      "Custom AI software that automates revenue, reduces operating costs, and compounds the productivity of every team it touches.",
+      "Custom AI software systems that automate revenue, reduce operating costs, and compound the productivity of every team they touch.",
     url: SITE_URL,
     siteName: "AlienAI",
     type: "website",
@@ -46,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "AlienAI — Higher order intelligence for business",
     description:
-      "Custom AI software that automates revenue, reduces operating costs, and compounds the productivity of every team it touches.",
+      "Custom AI software systems that automate revenue, reduce operating costs, and compound the productivity of every team they touch.",
     images: ["/og.png"],
   },
   icons: {
@@ -69,7 +62,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${bricolage.variable} ${interTight.variable} ${jetbrains.variable}`}
+      className={`${geistSans.variable} ${geistMono.variable}`}
     >
       <body className="min-h-screen flex flex-col">
         <SiteHeader />

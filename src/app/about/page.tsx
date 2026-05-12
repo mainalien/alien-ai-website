@@ -45,7 +45,7 @@ export default function AboutPage() {
             <p className="eyebrow-accent mb-6">/ About</p>
           </Reveal>
           <Reveal delay={0.05}>
-            <h1 className="display-tight text-[clamp(48px,8vw,120px)] text-inkwell max-w-[20ch]">
+            <h1 className="display-tight text-[clamp(48px,8vw,120px)] text-ink max-w-[20ch]">
               A small firm, unusually serious about software.
             </h1>
           </Reveal>
@@ -70,7 +70,7 @@ export default function AboutPage() {
                   <span className="font-mono text-[10.5px] tracking-[0.22em] uppercase text-terracotta-deep">
                     {String(i + 1).padStart(2, "0")} · Belief
                   </span>
-                  <h2 className="display text-[26px] md:text-[34px] leading-[1.1] text-inkwell">
+                  <h2 className="display text-[26px] md:text-[34px] leading-[1.1] text-ink">
                     {b.title}
                   </h2>
                   <p
@@ -84,23 +84,23 @@ export default function AboutPage() {
 
           <aside className="lg:col-span-5">
             <Reveal>
-              <div className="sticky top-28 rounded-2xl border border-inkwell/12 bg-linen/60 p-8 md:p-10">
+              <div className="sticky top-28 rounded-2xl border border-ink/12 bg-linen/60 p-8 md:p-10">
                 <p className="font-mono text-[10.5px] tracking-[0.22em] uppercase text-graphite-soft mb-6">
                   / The short version
                 </p>
-                <dl className="flex flex-col divide-y divide-inkwell/10">
+                <dl className="flex flex-col divide-y divide-ink/10">
                   {facts.map((f) => (
                     <div key={f.k} className="grid grid-cols-12 gap-4 py-3">
                       <dt className="col-span-5 font-mono text-[11px] tracking-[0.14em] uppercase text-graphite">
                         {f.k}
                       </dt>
-                      <dd className="col-span-7 text-[14px] text-inkwell">
+                      <dd className="col-span-7 text-[14px] text-ink">
                         {f.v}
                       </dd>
                     </div>
                   ))}
                 </dl>
-                <div className="mt-8 pt-6 border-t border-inkwell/10">
+                <div className="mt-8 pt-6 border-t border-ink/10">
                   <p className="font-mono text-[10.5px] tracking-[0.22em] uppercase text-graphite-soft mb-3">
                     / The name
                   </p>
@@ -116,7 +116,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="px-6 md:px-10 py-24 md:py-28 bg-inkwell text-parchment">
+      <section className="px-6 md:px-10 py-24 md:py-28 bg-ink text-parchment">
         <div className="mx-auto max-w-[1320px] flex flex-col md:flex-row md:items-end md:justify-between gap-10">
           <Reveal>
             <h2 className="display-tight text-[clamp(36px,5.5vw,72px)] leading-[1] text-parchment max-w-[18ch]">
@@ -126,10 +126,10 @@ export default function AboutPage() {
           <Reveal delay={0.1}>
             <Link
               href="/contact/"
-              className="inline-flex items-center justify-between gap-3 bg-parchment text-inkwell rounded-full pl-7 pr-3 py-3.5 text-[15.5px] font-medium no-underline hover:bg-terracotta transition-colors group whitespace-nowrap"
+              className="inline-flex items-center justify-between gap-3 bg-parchment text-ink rounded-full pl-7 pr-3 py-3.5 text-[15.5px] font-medium no-underline hover:bg-terracotta transition-colors group whitespace-nowrap"
             >
               <span>Work with us</span>
-              <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-inkwell text-parchment">
+              <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-ink text-parchment">
                 →
               </span>
             </Link>

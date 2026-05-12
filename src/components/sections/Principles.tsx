@@ -21,7 +21,7 @@ const principles = [
 
 export function Principles() {
   return (
-    <section className="px-6 md:px-10 py-24 md:py-32 bg-inkwell text-parchment">
+    <section className="px-6 md:px-10 py-24 md:py-32 bg-ink text-parchment">
       <div className="mx-auto max-w-[1320px]">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-16">
           <div className="md:col-span-4">

@@ -32,7 +32,7 @@ const stories = [
   },
   {
     sector: "Financial services",
-    accent: "verdigris",
+    accent: "terracotta",
     title: "A claims-review pipeline calibrated to the regulator, not the demo.",
     summary:
       "Built a document-intelligence pipeline that triages claims documentation, extracts the right fields, scores risk, and routes the ambiguous cases to the right human reviewer — with confidence scores, citations, and a full evaluation harness against historical outcomes.",
@@ -44,7 +44,7 @@ const stories = [
   },
   {
     sector: "B2B SaaS",
-    accent: "inkwell",
+    accent: "ink",
     title: "Outbound that finally sounded like a person.",
     summary:
       "Replaced a templated sequence engine with a system that does the research a strong SDR would do — reading the prospect's company, recent news, and product fit — then drafts personalized outbound for review. Reps approve, edit, and send in a third of the time.",
@@ -58,13 +58,11 @@ const stories = [
 
 const accentBg: Record<string, string> = {
   terracotta: "bg-terracotta",
-  verdigris: "bg-verdigris",
-  inkwell: "bg-inkwell",
+  ink: "bg-ink",
 };
 const accentText: Record<string, string> = {
   terracotta: "text-terracotta-deep",
-  verdigris: "text-verdigris",
-  inkwell: "text-inkwell",
+  ink: "text-ink",
 };
 
 export default function ResultsPage() {
@@ -76,7 +74,7 @@ export default function ResultsPage() {
             <p className="eyebrow-accent mb-6">/ Results</p>
           </Reveal>
           <Reveal delay={0.05}>
-            <h1 className="display-tight text-[clamp(48px,8vw,120px)] text-inkwell max-w-[20ch]">
+            <h1 className="display-tight text-[clamp(48px,8vw,120px)] text-ink max-w-[20ch]">
               Measured in revenue, cost, and hours returned.
             </h1>
           </Reveal>
@@ -97,8 +95,8 @@ export default function ResultsPage() {
             {metrics.map((m, i) => (
               <Reveal key={m.label} as="li" delay={0.04 + (i % 3) * 0.04}>
                 <article className="card rounded-2xl p-7 md:p-8 h-full flex flex-col gap-4">
-                  <span className="metric text-[56px] md:text-[68px] text-inkwell">{m.value}</span>
-                  <span className="display text-[18px] md:text-[20px] text-inkwell leading-[1.2]">
+                  <span className="metric text-[56px] md:text-[68px] text-ink">{m.value}</span>
+                  <span className="display text-[18px] md:text-[20px] text-ink leading-[1.2]">
                     {m.label}
                   </span>
                   <span className="text-[13.5px] leading-[1.55] text-graphite">{m.note}</span>
@@ -109,13 +107,13 @@ export default function ResultsPage() {
         </div>
       </section>
 
-      <section className="px-6 md:px-10 py-24 md:py-32 bg-linen/60 border-y border-inkwell/10">
+      <section className="px-6 md:px-10 py-24 md:py-32 bg-linen/60 border-y border-ink/10">
         <div className="mx-auto max-w-[1320px]">
           <Reveal>
             <p className="eyebrow-accent mb-5">/ Engagement shapes</p>
           </Reveal>
           <Reveal delay={0.05}>
-            <h2 className="display-tight text-[clamp(36px,5.5vw,72px)] text-inkwell max-w-[22ch] mb-14 md:mb-20">
+            <h2 className="display-tight text-[clamp(36px,5.5vw,72px)] text-ink max-w-[22ch] mb-14 md:mb-20">
               The kinds of work we are unusually good at.
             </h2>
           </Reveal>
@@ -123,7 +121,7 @@ export default function ResultsPage() {
           <div className="flex flex-col gap-8 md:gap-12">
             {stories.map((s, i) => (
               <Reveal key={s.title} delay={0.06 + i * 0.06}>
-                <article className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 pb-12 border-b border-inkwell/10 last:border-0 last:pb-0">
+                <article className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 pb-12 border-b border-ink/10 last:border-0 last:pb-0">
                   <div className="md:col-span-5 flex flex-col gap-4">
                     <div className="flex items-center gap-3">
                       <span className={`inline-block h-2 w-2 rounded-full ${accentBg[s.accent]}`} />
@@ -131,7 +129,7 @@ export default function ResultsPage() {
                         {s.sector}
                       </span>
                     </div>
-                    <h3 className="display text-[26px] md:text-[34px] leading-[1.1] text-inkwell">
+                    <h3 className="display text-[26px] md:text-[34px] leading-[1.1] text-ink">
                       {s.title}
                     </h3>
                   </div>
@@ -139,7 +137,7 @@ export default function ResultsPage() {
                     <p className="text-[15.5px] leading-[1.65] text-graphite">{s.summary}</p>
                     <ul className="flex flex-col gap-2.5">
                       {s.impact.map((b) => (
-                        <li key={b} className="flex gap-3 text-[14.5px] leading-[1.55] text-inkwell">
+                        <li key={b} className="flex gap-3 text-[14.5px] leading-[1.55] text-ink">
                           <span className={`mt-[10px] h-px w-3 ${accentBg[s.accent]} shrink-0`} />
                           <span>{b}</span>
                         </li>
@@ -163,16 +161,16 @@ export default function ResultsPage() {
 
       <section className="px-6 md:px-10 py-24 md:py-32">
         <div className="mx-auto max-w-[1320px]">
-          <div className="rounded-3xl bg-inkwell text-parchment p-10 md:p-16 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+          <div className="rounded-3xl bg-ink text-parchment p-10 md:p-16 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
             <h2 className="display text-[28px] md:text-[40px] leading-[1.1] text-parchment max-w-[28ch]">
               Curious what a system like this would look like in your business?
             </h2>
             <Link
               href="/contact/"
-              className="inline-flex items-center justify-between gap-3 bg-parchment text-inkwell rounded-full pl-7 pr-3 py-3.5 text-[15.5px] font-medium no-underline hover:bg-terracotta hover:text-inkwell transition-colors group whitespace-nowrap"
+              className="inline-flex items-center justify-between gap-3 bg-parchment text-ink rounded-full pl-7 pr-3 py-3.5 text-[15.5px] font-medium no-underline hover:bg-terracotta hover:text-ink transition-colors group whitespace-nowrap"
             >
               <span>Start a conversation</span>
-              <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-inkwell text-parchment">
+              <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-ink text-parchment">
                 →
               </span>
             </Link>

@@ -25,7 +25,7 @@ const families = [
   },
   {
     family: "Cost",
-    accent: "verdigris",
+    accent: "terracotta",
     headline: "A 24/7 first line for the work no one wants to do.",
     body: "Domain-tuned support, billing, and back-office agents that resolve 60–80% of repetitive work autonomously, with a clean human handoff for the rest. Built around your systems and your SOPs — not a generic chatbot.",
     deliverables: [
@@ -39,7 +39,7 @@ const families = [
   },
   {
     family: "Knowledge",
-    accent: "inkwell",
+    accent: "ink",
     headline: "The documents your business runs on, read at machine speed.",
     body: "Extract, classify, and reason over contracts, claims, invoices, SOPs, RFPs, and regulatory filings — at a fraction of the time and cost of human review, with confidence scores and source citations on every output.",
     deliverables: [
@@ -67,7 +67,7 @@ const families = [
   },
   {
     family: "People",
-    accent: "verdigris",
+    accent: "terracotta",
     headline: "A private copilot that knows your business.",
     body: "Internal answer engines and copilots wired into the systems your team actually uses — Slack, email, your data warehouse, your knowledge base — so the right answer reaches the right person without another meeting.",
     deliverables: [
@@ -81,7 +81,7 @@ const families = [
   },
   {
     family: "Workflow",
-    accent: "inkwell",
+    accent: "ink",
     headline: "Autonomous systems that close the loop.",
     body: "Long-running agents that complete multi-step work end-to-end — researching, calling tools, executing, recovering from failure, and handing back results with a full audit trail. Built to operate for hours, not seconds.",
     deliverables: [
@@ -97,14 +97,12 @@ const families = [
 
 const accentClass: Record<string, string> = {
   terracotta: "text-terracotta-deep",
-  verdigris: "text-verdigris",
-  inkwell: "text-inkwell",
+  ink: "text-ink",
 };
 
 const accentBg: Record<string, string> = {
   terracotta: "bg-terracotta",
-  verdigris: "bg-verdigris",
-  inkwell: "bg-inkwell",
+  ink: "bg-ink",
 };
 
 export default function SolutionsPage() {
@@ -116,7 +114,7 @@ export default function SolutionsPage() {
             <p className="eyebrow-accent mb-6">/ Solutions</p>
           </Reveal>
           <Reveal delay={0.05}>
-            <h1 className="display-tight text-[clamp(48px,8vw,120px)] text-inkwell max-w-[18ch]">
+            <h1 className="display-tight text-[clamp(48px,8vw,120px)] text-ink max-w-[18ch]">
               Custom AI systems, by category.
             </h1>
           </Reveal>
@@ -135,7 +133,7 @@ export default function SolutionsPage() {
         <div className="mx-auto max-w-[1320px] flex flex-col gap-8 md:gap-10">
           {families.map((f, i) => (
             <Reveal key={f.family} delay={0.04 + i * 0.04}>
-              <article className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 p-8 md:p-12 rounded-3xl bg-linen/60 border border-inkwell/10">
+              <article className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 p-8 md:p-12 rounded-3xl bg-linen/60 border border-ink/10">
                 <div className="md:col-span-5 flex flex-col gap-5">
                   <div className="flex items-center gap-3">
                     <span className={`inline-block h-2 w-2 rounded-full ${accentBg[f.accent]}`} />
@@ -143,7 +141,7 @@ export default function SolutionsPage() {
                       {f.family} · 0{i + 1}
                     </span>
                   </div>
-                  <h2 className="display text-[30px] md:text-[40px] leading-[1.05] text-inkwell">
+                  <h2 className="display text-[30px] md:text-[40px] leading-[1.05] text-ink">
                     {f.headline}
                   </h2>
                   <p className="text-[15.5px] leading-[1.65] text-graphite">
@@ -159,7 +157,7 @@ export default function SolutionsPage() {
                   </p>
                   <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3">
                     {f.deliverables.map((d) => (
-                      <li key={d} className="flex gap-3 text-[14.5px] leading-[1.5] text-inkwell">
+                      <li key={d} className="flex gap-3 text-[14.5px] leading-[1.5] text-ink">
                         <span className={`mt-[10px] h-px w-3 ${accentBg[f.accent]} shrink-0`} />
                         <span>{d}</span>
                       </li>
@@ -174,7 +172,7 @@ export default function SolutionsPage() {
 
       <section className="px-6 md:px-10 pb-32">
         <div className="mx-auto max-w-[1320px]">
-          <div className="rounded-3xl bg-inkwell text-parchment p-10 md:p-16 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+          <div className="rounded-3xl bg-ink text-parchment p-10 md:p-16 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
             <div>
               <p className="font-mono text-[11px] tracking-[0.18em] uppercase text-terracotta mb-4">
                 / Doesn&rsquo;t fit?
@@ -185,10 +183,10 @@ export default function SolutionsPage() {
             </div>
             <Link
               href="/contact/"
-              className="inline-flex items-center justify-between gap-3 bg-parchment text-inkwell rounded-full pl-7 pr-3 py-3.5 text-[15.5px] font-medium no-underline hover:bg-terracotta hover:text-inkwell transition-colors group whitespace-nowrap"
+              className="inline-flex items-center justify-between gap-3 bg-parchment text-ink rounded-full pl-7 pr-3 py-3.5 text-[15.5px] font-medium no-underline hover:bg-terracotta hover:text-ink transition-colors group whitespace-nowrap"
             >
               <span>Tell us what you need</span>
-              <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-inkwell text-parchment group-hover:bg-inkwell">
+              <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-ink text-parchment group-hover:bg-ink">
                 →
               </span>
             </Link>

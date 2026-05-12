@@ -6,23 +6,20 @@ type Props = {
 };
 
 const sizes: Record<NonNullable<Props["size"]>, { text: string; mark: number; gap: string }> = {
-  sm: { text: "text-[18px]", mark: 22, gap: "gap-[9px]" },
-  md: { text: "text-[22px]", mark: 28, gap: "gap-[10px]" },
-  lg: { text: "text-[36px]", mark: 44, gap: "gap-[14px]" },
+  sm: { text: "text-[17px]", mark: 22, gap: "gap-[9px]" },
+  md: { text: "text-[20px]", mark: 26, gap: "gap-[10px]" },
+  lg: { text: "text-[32px]", mark: 40, gap: "gap-[14px]" },
 };
 
 export function Wordmark({ className, size = "md" }: Props) {
   const s = sizes[size];
   return (
     <span
-      className={`inline-flex items-center ${s.gap} font-display leading-none tracking-[-0.04em] text-inkwell ${className ?? ""}`}
+      className={`inline-flex items-center ${s.gap} wordmark leading-none text-ink ${className ?? ""}`}
       aria-label="AlienAI"
-      style={{ fontVariationSettings: '"opsz" 32, "wdth" 88, "wght" 700' }}
     >
-      <Mark size={s.mark} title="AlienAI" className="text-inkwell shrink-0" />
-      <span className={`${s.text} font-bold`}>
-        alienai
-      </span>
+      <Mark size={s.mark} title="AlienAI" className="text-ink shrink-0" />
+      <span className={s.text}>alienai</span>
     </span>
   );
 }

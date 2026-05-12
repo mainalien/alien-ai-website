@@ -3,22 +3,19 @@
 @theme {
   --color-parchment: #ede8e2;
   --color-linen: #e4dccf;
-  --color-wheat: #e0d3bf;
-  --color-inkwell: #1b1a23;
-  --color-inkwell-soft: #2a2933;
-  --color-graphite: #4a4843;
+  --color-ink: #1f1b1a;
+  --color-ink-soft: #2d2826;
+  --color-graphite: #4a4540;
   --color-graphite-soft: #6f6a62;
-  --color-taupe: #bbaea5;
   --color-terracotta: #d0864a;
   --color-terracotta-deep: #b06a32;
-  --color-verdigris: #2f6b61;
-  --color-verdigris-soft: #6c948e;
 
-  --font-display: var(--font-bricolage), ui-sans-serif, system-ui, sans-serif;
-  --font-sans: var(--font-inter-tight), ui-sans-serif, system-ui, -apple-system,
+  --font-display: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system,
     "Segoe UI", Roboto, sans-serif;
-  --font-mono: var(--font-jetbrains), ui-monospace, "JetBrains Mono",
-    "SFMono-Regular", Menlo, monospace;
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, "SFMono-Regular", Menlo,
+    monospace;
 }
 
 :root {
@@ -27,21 +24,21 @@
 
 html {
   background-color: var(--color-parchment);
-  color: var(--color-inkwell);
+  color: var(--color-ink);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 
 body {
   background-color: var(--color-parchment);
-  color: var(--color-inkwell);
+  color: var(--color-ink);
   font-family: var(--font-sans);
-  font-feature-settings: "ss01", "cv11";
+  font-feature-settings: "ss01", "ss02", "cv01", "cv11";
   letter-spacing: -0.005em;
 }
 
 ::selection {
-  background: var(--color-inkwell);
+  background: var(--color-ink);
   color: var(--color-parchment);
 }
 
@@ -52,7 +49,7 @@ a {
 
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid var(--color-verdigris);
+  outline: 2px solid var(--color-terracotta-deep);
   outline-offset: 4px;
   border-radius: 2px;
 }
@@ -60,17 +57,15 @@ button:focus-visible {
 .display {
   font-family: var(--font-display);
   font-weight: 600;
-  letter-spacing: -0.035em;
-  line-height: 0.96;
-  font-variation-settings: "opsz" 36, "wdth" 100, "wght" 600;
+  letter-spacing: -0.025em;
+  line-height: 1;
 }
 
 .display-tight {
   font-family: var(--font-display);
   font-weight: 700;
-  letter-spacing: -0.04em;
-  line-height: 0.94;
-  font-variation-settings: "opsz" 48, "wdth" 95, "wght" 700;
+  letter-spacing: -0.035em;
+  line-height: 0.95;
 }
 
 .eyebrow {
@@ -91,7 +86,7 @@ button:focus-visible {
 
 .rule {
   height: 1px;
-  background: color-mix(in oklab, var(--color-inkwell) 14%, transparent);
+  background: color-mix(in oklab, var(--color-ink) 14%, transparent);
 }
 
 .paper {
@@ -99,7 +94,7 @@ button:focus-visible {
   background-image:
     radial-gradient(
       circle at 1px 1px,
-      color-mix(in oklab, var(--color-inkwell) 4%, transparent) 1px,
+      color-mix(in oklab, var(--color-ink) 4%, transparent) 1px,
       transparent 0
     );
   background-size: 24px 24px;
@@ -107,15 +102,21 @@ button:focus-visible {
 
 .card {
   background-color: color-mix(in oklab, var(--color-linen) 75%, var(--color-parchment));
-  border: 1px solid color-mix(in oklab, var(--color-inkwell) 8%, transparent);
+  border: 1px solid color-mix(in oklab, var(--color-ink) 8%, transparent);
 }
 
 .metric {
   font-family: var(--font-display);
-  font-variation-settings: "opsz" 60, "wdth" 90, "wght" 700;
+  font-weight: 700;
   letter-spacing: -0.04em;
   line-height: 0.92;
   font-feature-settings: "tnum";
+}
+
+.wordmark {
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: -0.045em;
 }
 
 @media (prefers-reduced-motion: reduce) {
