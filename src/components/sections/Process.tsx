@@ -3,27 +3,27 @@ import { Reveal } from "@/components/primitives/Reveal";
 const steps = [
   {
     n: "01",
-    title: "Diagnose",
+    title: "Match",
     duration: "Week 1",
-    body: "We start with the workflow, not the model. Where the cost sits, where the revenue leaks, where a human is doing what software should.",
+    body: "We map the work you are trying to automate to the right system — the one that already exists, the one that already runs. No exploratory builds.",
   },
   {
     n: "02",
-    title: "Design",
-    duration: "Week 2",
-    body: "We scope a single, sharp deliverable. The smallest system that can earn its way into production — and the path it takes to get there.",
+    title: "Configure",
+    duration: "Weeks 2–3",
+    body: "We tailor the system to your data, your SOPs, your edge cases, and your tone. The engine is shared; the configuration is yours.",
   },
   {
     n: "03",
-    title: "Build",
-    duration: "Weeks 3–8",
-    body: "We build in your environment, against your data, with the evaluations and observability the system will need to be trusted on day 100.",
+    title: "Connect",
+    duration: "Weeks 3–6",
+    body: "We integrate the system into the stack you already use — CRM, ATS, ERP, help desk, knowledge base, data warehouse — with the security your team requires.",
   },
   {
     n: "04",
     title: "Operate",
     duration: "Ongoing",
-    body: "We hand off a working system — with the dashboards, the failure modes, and the runbooks. Or we stay on and run it ourselves.",
+    body: "The system runs continuously, with dashboards, audits, observability, and clear human handoffs. You subscribe; we keep it running and improving.",
   },
 ];
 
@@ -32,18 +32,18 @@ export function Process() {
     <section className="px-6 md:px-10 py-14 md:py-32">
       <div className="mx-auto max-w-[1320px]">
         <Reveal>
-          <p className="eyebrow-accent mb-5">/ How we engage</p>
+          <p className="eyebrow-accent mb-5">/ How we deploy</p>
         </Reveal>
 
         <Reveal delay={0.05}>
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 mb-8 md:mb-20 items-end">
             <h2 className="md:col-span-7 display-tight text-[clamp(36px,6vw,80px)] text-ink">
-              Four phases. One outcome.
+              Four phases. One operating system.
             </h2>
             <p className="md:col-span-5 text-[16.5px] leading-[1.65] text-graphite">
-              We do not bill for slideware, discovery cycles, or strategy decks.
-              Every engagement is a path from a real problem to a system that
-              quietly does the work.
+              We do not build from scratch every time. We deploy proven AI
+              systems, configured and connected to your reality — and then we
+              run them for you.
             </p>
           </div>
         </Reveal>

@@ -19,11 +19,10 @@ export function Hero() {
 
         <div className="mt-8 md:mt-14 grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 items-end">
           <p className="md:col-span-7 text-[17px] md:text-[22px] leading-[1.5] text-graphite">
-            AlienAI builds custom AI software systems that automate revenue,
-            reduce operating costs, and compound the productivity of every
-            team they touch. Built at the leading edge of what AI can do —
-            quietly engineered, deliberately deployed, designed to operate
-            without you.
+            AlienAI builds production AI systems for the work modern
+            businesses run on — recruiting, support, sales, finance,
+            knowledge work. Built once at the leading edge of what AI can
+            do, configured to your stack, deployed to run.
           </p>
 
           <div className="md:col-span-5 flex flex-col gap-3">
@@ -40,7 +39,7 @@ export function Hero() {
               href="/solutions/"
               className="inline-flex items-center justify-between gap-3 border border-ink/15 text-ink rounded-full pl-6 pr-3 py-3 text-[15px] font-medium no-underline hover:border-ink/40 transition-colors group"
             >
-              <span>See what we build</span>
+              <span>See our systems</span>
               <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-ink/8 text-ink group-hover:bg-ink group-hover:text-parchment transition-colors">
                 ↗
               </span>

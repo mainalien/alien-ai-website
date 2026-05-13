@@ -1,0 +1,143 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$meta": {
+    "name": "AlienAI Design System",
+    "version": "1.0.0",
+    "description": "Tokens for the AlienAI brand and product systems."
+  },
+  "color": {
+    "core": {
+      "ink": {
+        "value": "#171A22",
+        "description": "Primary text, navy-stamp accents, dark surfaces, footer. Settled-ink midpoint between Athena's custom inkwell and a generic charcoal."
+      },
+      "ink-soft": {
+        "value": "#2B2E36",
+        "description": "Elevated dark surfaces, secondary navy."
+      },
+      "parchment": {
+        "value": "#F0E7D6",
+        "description": "Page canvas. Warm cream. Never use #FFFFFF."
+      },
+      "linen": {
+        "value": "#E6D7BD",
+        "description": "Section breaks, card backgrounds on light surfaces."
+      },
+      "ember": {
+        "value": "#D24D2A",
+        "description": "Signature accent — pills, dots, accent bars, hairlines. Used sparingly."
+      },
+      "ember-deep": {
+        "value": "#A93B1F",
+        "description": "Ember hover state and eyebrow-accent text on light backgrounds."
+      },
+      "ember-soft": {
+        "value": "#E3784F",
+        "description": "Ember used on dark surfaces (against ink)."
+      },
+      "graphite": {
+        "value": "#4E5165",
+        "description": "Body copy. Cool warm-leaning gray that harmonizes with both ink and parchment."
+      },
+      "graphite-soft": {
+        "value": "#6F7287",
+        "description": "Tertiary copy and small label text."
+      }
+    },
+    "semantic": {
+      "text": {
+        "primary": { "value": "{color.core.ink}" },
+        "secondary": { "value": "{color.core.graphite}" },
+        "muted": { "value": "{color.core.graphite-soft}" },
+        "on-dark": { "value": "{color.core.parchment}" },
+        "accent": { "value": "{color.core.ember-deep}" }
+      },
+      "surface": {
+        "canvas": { "value": "{color.core.parchment}" },
+        "card": { "value": "{color.core.linen}" },
+        "inverted": { "value": "{color.core.ink}" }
+      },
+      "border": {
+        "subtle": { "value": "color-mix(in oklab, {color.core.ink} 12%, transparent)" },
+        "strong": { "value": "{color.core.ink}" }
+      }
+    }
+  },
+  "font": {
+    "family": {
+      "display": {
+        "value": "Geist, ui-sans-serif, system-ui, sans-serif",
+        "description": "Headlines, marks, metrics."
+      },
+      "sans": {
+        "value": "Geist, ui-sans-serif, system-ui, sans-serif",
+        "description": "Body and UI text."
+      },
+      "mono": {
+        "value": "Geist Mono, ui-monospace, SFMono-Regular, Menlo, monospace",
+        "description": "Eyebrows, labels, numbers, code."
+      }
+    },
+    "size": {
+      "micro": { "value": "10.5px" },
+      "small": { "value": "13.5px" },
+      "body": { "value": "16px" },
+      "lead": { "value": "19px" },
+      "h3": { "value": "24px" },
+      "h2": { "value": "40px" },
+      "h1": { "value": "72px" },
+      "display": { "value": "120px" }
+    },
+    "weight": {
+      "regular": { "value": 400 },
+      "medium": { "value": 500 },
+      "semibold": { "value": 600 },
+      "bold": { "value": 700 },
+      "black": { "value": 800 }
+    },
+    "tracking": {
+      "display-tight": { "value": "-0.035em" },
+      "display": { "value": "-0.025em" },
+      "wordmark": { "value": "-0.045em" },
+      "body": { "value": "-0.005em" },
+      "eyebrow": { "value": "0.18em" },
+      "uppercase-tight": { "value": "0.14em" }
+    },
+    "line-height": {
+      "display": { "value": 0.95 },
+      "tight": { "value": 1.1 },
+      "snug": { "value": 1.2 },
+      "normal": { "value": 1.5 },
+      "loose": { "value": 1.65 }
+    }
+  },
+  "radius": {
+    "sm": { "value": "4px" },
+    "md": { "value": "8px" },
+    "lg": { "value": "12px" },
+    "xl": { "value": "16px" },
+    "2xl": { "value": "24px" },
+    "3xl": { "value": "32px" },
+    "pill": { "value": "9999px" }
+  },
+  "space": {
+    "0": { "value": "0" },
+    "1": { "value": "4px" },
+    "2": { "value": "8px" },
+    "3": { "value": "12px" },
+    "4": { "value": "16px" },
+    "6": { "value": "24px" },
+    "8": { "value": "32px" },
+    "10": { "value": "40px" },
+    "12": { "value": "48px" },
+    "16": { "value": "64px" },
+    "20": { "value": "80px" },
+    "24": { "value": "96px" },
+    "32": { "value": "128px" }
+  },
+  "elevation": {
+    "card": {
+      "value": "1px solid color-mix(in oklab, {color.core.ink} 8%, transparent)"
+    }
+  }
+}

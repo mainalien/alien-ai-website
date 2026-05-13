@@ -20,10 +20,11 @@ const metrics = [
 const stories = [
   {
     sector: "Industrial distribution",
+    system: "AI Document Intelligence System",
     accent: "ember",
-    title: "A quote desk that wrote its own quotes overnight.",
+    title: "Quote turnaround compressed from days to minutes.",
     summary:
-      "Replaced the slowest part of a B2B distributor's revenue cycle — manual quote generation against tens of thousands of SKUs — with a domain-tuned system that drafts a customer-ready quote in under 30 seconds, including pricing rules, inventory, and freight.",
+      "A B2B distributor deployed our Document Intelligence System against tens of thousands of SKUs, configured with their pricing rules, inventory feeds, and freight tables. Customer-ready quotes now draft in under 30 seconds.",
     impact: [
       "Quote turnaround compressed from days to minutes.",
       "Win-rate on quotes responded to within 1 hour rose meaningfully.",
@@ -32,10 +33,11 @@ const stories = [
   },
   {
     sector: "Financial services",
+    system: "AI Document Intelligence System",
     accent: "ember",
-    title: "A claims-review pipeline calibrated to the regulator, not the demo.",
+    title: "Claims-review hours cut in half, error rate held.",
     summary:
-      "Built a document-intelligence pipeline that triages claims documentation, extracts the right fields, scores risk, and routes the ambiguous cases to the right human reviewer — with confidence scores, citations, and a full evaluation harness against historical outcomes.",
+      "A regional insurer deployed our Document Intelligence System against the claims queue — extracting fields, scoring risk, routing ambiguous cases to the right human. Same engine, configured to their forms, their policies, and their regulator.",
     impact: [
       "Manual review hours reduced by more than half on routine claims.",
       "Material-error rate held below the prior human baseline.",
@@ -44,10 +46,11 @@ const stories = [
   },
   {
     sector: "B2B SaaS",
+    system: "AI Sales Automation System",
     accent: "ink",
     title: "Outbound that finally sounded like a person.",
     summary:
-      "Replaced a templated sequence engine with a system that does the research a strong SDR would do — reading the prospect's company, recent news, and product fit — then drafts personalized outbound for review. Reps approve, edit, and send in a third of the time.",
+      "A growth team replaced a templated sequence engine with our Sales Automation System — researching prospects, drafting personalized outbound, queueing it for human approval. The same engine, configured to their ICP, voice, and CRM.",
     impact: [
       "Reply rates doubled vs. the prior templated baseline.",
       "Reps moved more time into conversations and less into research.",
@@ -110,11 +113,11 @@ export default function ResultsPage() {
       <section className="px-6 md:px-10 py-24 md:py-32 bg-linen/60 border-y border-ink/10">
         <div className="mx-auto max-w-[1320px]">
           <Reveal>
-            <p className="eyebrow-accent mb-5">/ Engagement shapes</p>
+            <p className="eyebrow-accent mb-5">/ Deployments</p>
           </Reveal>
           <Reveal delay={0.05}>
             <h2 className="display-tight text-[clamp(36px,5.5vw,72px)] text-ink max-w-[22ch] mb-14 md:mb-20">
-              The kinds of work we are unusually good at.
+              Deployments, by sector and system.
             </h2>
           </Reveal>
 
@@ -132,6 +135,9 @@ export default function ResultsPage() {
                     <h3 className="display text-[26px] md:text-[34px] leading-[1.1] text-ink">
                       {s.title}
                     </h3>
+                    <p className="font-mono text-[10.5px] tracking-[0.18em] uppercase text-graphite-soft">
+                      Deployed: {s.system}
+                    </p>
                   </div>
                   <div className="md:col-span-7 flex flex-col gap-5">
                     <p className="text-[15.5px] leading-[1.65] text-graphite">{s.summary}</p>
@@ -151,7 +157,7 @@ export default function ResultsPage() {
 
           <Reveal delay={0.2}>
             <p className="mt-14 text-[13px] text-graphite-soft italic max-w-[80ch]">
-              Note: engagement shapes are anonymized and generalized for
+              Note: deployments are anonymized and generalized for
               confidentiality. Specifics, reference customers, and signed case
               studies are available under NDA at the diligence stage.
             </p>

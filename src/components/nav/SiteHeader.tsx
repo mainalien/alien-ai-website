@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Wordmark } from "@/components/brand/Wordmark";
 
 const navLinks = [
-  { href: "/solutions/", label: "Solutions" },
+  { href: "/solutions/", label: "Systems" },
   { href: "/results/", label: "Results" },
   { href: "/about/", label: "About" },
   { href: "/contact/", label: "Contact" },

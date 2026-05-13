@@ -19,7 +19,7 @@ const beliefs = [
   },
   {
     title: "Outcomes, not output.",
-    body: "We are paid when the dollar is saved, the deal is opened, or the hour is reclaimed. Not when the slideware is delivered. Every engagement is anchored to a measurable result the business cares about.",
+    body: "We are paid when the dollar is saved, the deal is opened, or the hour is reclaimed. Not when the slideware is delivered. Every deployment is anchored to a measurable result the business cares about.",
   },
   {
     title: "Living at the cutting edge.",
@@ -30,10 +30,10 @@ const beliefs = [
 const facts = [
   { k: "Founded", v: "2024" },
   { k: "Operating", v: "United States, remote-first" },
-  { k: "Engagement length", v: "6 weeks to ongoing" },
-  { k: "Time-to-production", v: "Median 8 weeks" },
-  { k: "What we deliver", v: "Production software, not slideware" },
-  { k: "What we don’t do", v: "AI strategy, generic chatbots, retainers without outcomes" },
+  { k: "Business model", v: "Productized AI systems, licensed as SaaS" },
+  { k: "Time-to-production", v: "Median 8 weeks from kickoff" },
+  { k: "What we deliver", v: "Production software, configured to your stack" },
+  { k: "What we don’t do", v: "AI strategy decks, generic chatbots, custom builds-from-scratch" },
 ];
 
 export default function AboutPage() {
@@ -56,13 +56,13 @@ export default function AboutPage() {
           </Reveal>
           <Reveal delay={0.15}>
             <p className="mt-10 max-w-[64ch] text-[18px] md:text-[20px] leading-[1.6] text-graphite">
-              AlienAI builds production AI applications for businesses living
-              at the leading edge of what software can do. We operate where AI
-              and innovation meet — building systems that wouldn&rsquo;t have
-              been possible last year, on infrastructure still being invented
-              this year. We do one thing — write software that makes our
-              clients quietly more capable — and we orient everything else
-              around doing it well.
+              AlienAI builds production AI systems for the work modern
+              businesses run on. We operate where AI and innovation meet —
+              shipping systems that wouldn&rsquo;t have been possible last
+              year, on infrastructure still being invented this year. Each
+              system is built once, hardened in production, and licensed to
+              the businesses that need it. The engine is the same. The
+              configuration is yours.
             </p>
           </Reveal>
         </div>

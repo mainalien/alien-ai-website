@@ -1,0 +1,30 @@
+/* AlienAI color tokens — mirror of design-tokens.json */
+/* Source of truth: ./design-tokens.json */
+/* Consumed by: src/app/globals.css */
+
+:root {
+  /* Core */
+  --ai-ink: #171a22;
+  --ai-ink-soft: #2b2e36;
+  --ai-parchment: #f0e7d6;
+  --ai-linen: #e6d7bd;
+  --ai-ember: #d24d2a;
+  --ai-ember-deep: #a93b1f;
+  --ai-ember-soft: #e3784f;
+  --ai-graphite: #4e5165;
+  --ai-graphite-soft: #6f7287;
+
+  /* Semantic */
+  --ai-text-primary: var(--ai-ink);
+  --ai-text-secondary: var(--ai-graphite);
+  --ai-text-muted: var(--ai-graphite-soft);
+  --ai-text-on-dark: var(--ai-parchment);
+  --ai-text-accent: var(--ai-ember-deep);
+
+  --ai-surface-canvas: var(--ai-parchment);
+  --ai-surface-card: var(--ai-linen);
+  --ai-surface-inverted: var(--ai-ink);
+
+  --ai-border-subtle: color-mix(in oklab, var(--ai-ink) 12%, transparent);
+  --ai-border-strong: var(--ai-ink);
+}

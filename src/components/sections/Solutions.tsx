@@ -3,44 +3,44 @@ import { Reveal } from "@/components/primitives/Reveal";
 const solutions = [
   {
     index: "01",
-    family: "Revenue",
-    title: "Pipeline & deal automation",
-    body: "AI that researches accounts, drafts outbound, qualifies inbound, and triages your pipeline 24/7 — so reps wake up to a pre-prioritized day instead of a blank CRM.",
-    chips: ["Outbound", "Lead scoring", "Deal triage"],
+    family: "Recruiting",
+    title: "The AI Recruiting System",
+    body: "Source, screen, schedule, and onboard at scale. Plugs into your ATS, calendar, and inbox. The same system, configured to your roles and your bar.",
+    chips: ["Sourcing", "Screening", "Scheduling"],
   },
   {
     index: "02",
-    family: "Cost",
-    title: "Support & operations agents",
-    body: "Domain-tuned support, billing, and back-office agents that resolve the first 60–80% of tickets before a human sees them, with a clean human handoff for the rest.",
-    chips: ["Tier-1 support", "Back-office", "Escalations"],
+    family: "Customer Ops",
+    title: "The AI Customer Operations System",
+    body: "Tier-1 support, billing inquiries, and escalation triage — running 24/7 in your help desk. The same system, trained on your SOPs and your tone.",
+    chips: ["Tier-1", "Billing", "Escalations"],
   },
   {
     index: "03",
-    family: "Knowledge",
-    title: "Document & contract intelligence",
-    body: "Extract, classify, and reason over the documents your business runs on — contracts, claims, invoices, SOPs — at a fraction of the time and cost of human review.",
-    chips: ["Contracts", "Claims", "Audit"],
+    family: "Documents",
+    title: "The AI Document Intelligence System",
+    body: "Contracts, claims, invoices, RFPs — extracted, classified, and reasoned over at machine speed, with confidence scores and source citations on every output.",
+    chips: ["Contracts", "Claims", "Invoices"],
   },
   {
     index: "04",
-    family: "Decisions",
-    title: "Forecasting & risk systems",
-    body: "Calibrated decision systems for pricing, demand, fraud, and risk — built on your data, evaluated against your outcomes, deployed with the observability you need to trust them.",
-    chips: ["Forecasting", "Pricing", "Risk scoring"],
+    family: "Sales",
+    title: "The AI Sales Automation System",
+    body: "Pipeline triage, account research, personalized outbound, pre-call briefs. The same system that runs your prospecting, configured to your ICP and your CRM.",
+    chips: ["Pipeline", "Outbound", "Research"],
   },
   {
     index: "05",
-    family: "People",
-    title: "Internal copilots & search",
-    body: "Private copilots and answer engines wired into the systems your team actually uses — so the right answer reaches the right person without another meeting.",
-    chips: ["Copilots", "Search", "RAG"],
+    family: "Knowledge",
+    title: "The AI Knowledge Copilot System",
+    body: "A private answer engine wired into the stack your team already uses — Slack, email, your docs, your warehouse. Every answer cited. Every permission respected.",
+    chips: ["RAG", "Copilots", "Search"],
   },
   {
     index: "06",
     family: "Workflow",
-    title: "Autonomous workflows",
-    body: "Long-running agents that complete multi-step work end-to-end — recovering from failure, calling tools, and handing back results with a full audit trail.",
+    title: "The AI Workflow Engine",
+    body: "Long-running agents that complete multi-step work end-to-end — calling tools, recovering from failure, handing back results with a full audit trail.",
     chips: ["Agents", "Tools", "Audit trail"],
   },
 ];
@@ -50,18 +50,18 @@ export function Solutions() {
     <section className="px-6 md:px-10 py-14 md:py-32 bg-parchment">
       <div className="mx-auto max-w-[1320px]">
         <Reveal>
-          <p className="eyebrow-accent mb-5">/ What we build</p>
+          <p className="eyebrow-accent mb-5">/ Our systems</p>
         </Reveal>
 
         <Reveal delay={0.05}>
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 mb-8 md:mb-20 items-end">
             <h2 className="md:col-span-8 display-tight text-[clamp(36px,6.5vw,88px)] text-ink">
-              Six families of software, all engineered to operate.
+              Six production AI systems, ready to deploy.
             </h2>
             <p className="md:col-span-4 text-[16px] leading-[1.65] text-graphite">
-              Every engagement is bespoke, but the shapes recur. These are the
-              categories of system we are unusually good at shipping into
-              production — and keeping there.
+              Each system is built once, hardened in production, and licensed
+              to the businesses that need it. We handle the integration to your
+              stack. The same proven engine, deployed to your reality.
             </p>
           </div>
         </Reveal>

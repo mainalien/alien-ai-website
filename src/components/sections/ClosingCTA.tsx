@@ -43,7 +43,7 @@ export function ClosingCTA() {
                 href="/solutions/"
                 className="inline-flex items-center justify-between gap-3 border border-ink/20 text-ink rounded-full pl-7 pr-3 py-3.5 text-[15.5px] font-medium no-underline hover:border-ink/50 transition-colors group"
               >
-                <span>Browse solutions</span>
+                <span>Browse our systems</span>
                 <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-ink/8 text-ink group-hover:bg-ink group-hover:text-parchment transition-colors">
                   ↗
                 </span>

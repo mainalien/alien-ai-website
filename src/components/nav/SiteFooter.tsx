@@ -28,7 +28,7 @@ export function SiteFooter() {
                 Home
               </Link>
               <Link href="/solutions/" className="text-ink hover:text-ember-deep no-underline text-[14.5px]">
-                Solutions
+                Systems
               </Link>
               <Link href="/results/" className="text-ink hover:text-ember-deep no-underline text-[14.5px]">
                 Results

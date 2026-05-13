@@ -3,45 +3,47 @@ import Link from "next/link";
 import { Reveal } from "@/components/primitives/Reveal";
 
 export const metadata: Metadata = {
-  title: "Solutions",
+  title: "Systems",
   description:
-    "Custom AI systems for revenue, cost reduction, knowledge work, decisions, copilots, and autonomous workflows.",
+    "Production AI systems for recruiting, customer operations, documents, sales, knowledge, and workflow. Built once. Deployed to your stack.",
 };
 
 const families = [
   {
-    family: "Revenue",
+    family: "Recruiting",
     accent: "ember",
-    headline: "Pipeline that fills itself.",
-    body: "AI that researches accounts, drafts personalized outbound, qualifies inbound, and triages your pipeline continuously — so your reps wake up to a pre-prioritized day instead of a blank CRM.",
+    headline: "The AI Recruiting System.",
+    body: "Source, screen, schedule, and onboard at scale. The same proven system that runs continuously across your roles — configured to your hiring bar, your tone, and your stack. We plug it into your ATS, calendar, and inbox; it handles the rest.",
     deliverables: [
-      "Continuous prospecting and ICP scoring",
-      "Personalized outbound at human quality",
-      "Inbound qualification and routing in seconds",
-      "Pre-call account briefs for every meeting",
-      "Pipeline triage that surfaces the right deals",
+      "Continuous sourcing across channels",
+      "Screening against your role criteria",
+      "Auto-scheduling with calendar integration",
+      "Candidate-grounded interview prep for hiring managers",
+      "Pipeline analytics and bias-monitoring dashboards",
     ],
-    ideal: "Revenue and growth teams whose reps spend more time researching than selling.",
+    connectors: "ATS · Google Calendar / Outlook · Email · LinkedIn · Greenhouse / Lever / Workday",
+    ideal: "Recruiting teams that need to fill more roles faster — without growing the recruiting team.",
   },
   {
-    family: "Cost",
-    accent: "ember",
-    headline: "A 24/7 first line for the work no one wants to do.",
-    body: "Domain-tuned support, billing, and back-office agents that resolve 60–80% of repetitive work autonomously, with a clean human handoff for the rest. Built around your systems and your SOPs — not a generic chatbot.",
+    family: "Customer Operations",
+    accent: "ink",
+    headline: "The AI Customer Operations System.",
+    body: "Tier-1 support, billing inquiries, account changes, and escalation triage — running 24/7 in the help desk you already use. Same engine, trained on your SOPs, your tone, and your edge cases.",
     deliverables: [
-      "Tier-1 support resolution and deflection",
-      "Billing, returns, and account-change agents",
+      "Tier-1 resolution and deflection",
+      "Billing, returns, and account-change automation",
       "Internal helpdesk and IT triage",
       "Escalation classification with full context",
       "Audit-grade logging of every action taken",
     ],
+    connectors: "Zendesk · Intercom · Salesforce Service · Slack · Stripe · custom REST/SOAP",
     ideal: "Operations leaders whose cost-to-serve is rising faster than revenue.",
   },
   {
-    family: "Knowledge",
-    accent: "ink",
-    headline: "The documents your business runs on, read at machine speed.",
-    body: "Extract, classify, and reason over contracts, claims, invoices, SOPs, RFPs, and regulatory filings — at a fraction of the time and cost of human review, with confidence scores and source citations on every output.",
+    family: "Documents",
+    accent: "ember",
+    headline: "The AI Document Intelligence System.",
+    body: "Extract, classify, and reason over the documents your business runs on — contracts, claims, invoices, SOPs, RFPs, regulatory filings — with confidence scores and source citations on every output.",
     deliverables: [
       "Contract abstraction and clause extraction",
       "Claims and invoice processing",
@@ -49,41 +51,44 @@ const families = [
       "Compliance and policy checks",
       "Document-grounded Q&A with citations",
     ],
+    connectors: "S3 / GCS / Azure Blob · SharePoint · NetDocuments · iManage · DocuSign · ERP",
     ideal: "Legal, finance, claims, and procurement teams drowning in PDFs.",
   },
   {
-    family: "Decisions",
+    family: "Sales",
     accent: "ember",
-    headline: "Calibrated judgment on the choices that compound.",
-    body: "Forecasting, pricing, and risk systems built on your data and evaluated against your outcomes — not against benchmarks. Deployed with the observability and rollback tooling your business actually needs to trust them in production.",
+    headline: "The AI Sales Automation System.",
+    body: "Pipeline triage, account research, personalized outbound, and pre-call briefs — running continuously in your CRM. The same engine that builds your prospecting machine, configured to your ICP and tone.",
     deliverables: [
-      "Demand and revenue forecasting",
-      "Dynamic pricing and discount intelligence",
-      "Fraud, churn, and risk scoring",
-      "What-if simulators for planning teams",
-      "Model evaluation and drift monitoring",
+      "Continuous prospecting and ICP scoring",
+      "Personalized outbound at human quality",
+      "Inbound qualification and routing in seconds",
+      "Pre-call account briefs for every meeting",
+      "Pipeline triage that surfaces the right deals",
     ],
-    ideal: "Finance, supply chain, and risk teams making millions of small calls a year.",
+    connectors: "Salesforce · HubSpot · Outreach · Apollo · LinkedIn · Gong · email",
+    ideal: "Revenue teams whose reps spend more time researching than selling.",
   },
   {
-    family: "People",
-    accent: "ember",
-    headline: "A private copilot that knows your business.",
-    body: "Internal answer engines and copilots wired into the systems your team actually uses — Slack, email, your data warehouse, your knowledge base — so the right answer reaches the right person without another meeting.",
+    family: "Knowledge",
+    accent: "ink",
+    headline: "The AI Knowledge Copilot System.",
+    body: "A private answer engine wired into the systems your team already uses — Slack, email, Notion, your data warehouse — so the right answer reaches the right person without another meeting. Permissions, citations, and audit trails baked in.",
     deliverables: [
       "Domain-grounded answer engine",
       "Slack, email, and IDE copilots",
-      "Document and meeting search across your stack",
+      "Search across docs, meetings, and tickets",
       "Privacy-respecting RAG over your corpus",
       "Role-aware permissions and access controls",
     ],
+    connectors: "Slack · Notion · Confluence · Google Drive · SharePoint · Snowflake / BigQuery",
     ideal: "Knowledge-work teams whose institutional memory is locked in tribal channels.",
   },
   {
     family: "Workflow",
-    accent: "ink",
-    headline: "Autonomous systems that close the loop.",
-    body: "Long-running agents that complete multi-step work end-to-end — researching, calling tools, executing, recovering from failure, and handing back results with a full audit trail. Built to operate for hours, not seconds.",
+    accent: "ember",
+    headline: "The AI Workflow Engine.",
+    body: "Long-running agents that complete multi-step work end-to-end — researching, calling tools, executing, recovering from failure, handing back results with a full audit trail. Built to operate for hours, not seconds.",
     deliverables: [
       "Multi-step agent orchestration",
       "Tool use across your internal APIs",
@@ -91,7 +96,8 @@ const families = [
       "Full audit trail and replayability",
       "Cost, latency, and quality observability",
     ],
-    ideal: "Teams replacing whole workflows, not just individual tasks.",
+    connectors: "Any REST / GraphQL / gRPC service · webhooks · queue / pub-sub",
+    ideal: "Teams replacing whole workflows, not individual tasks.",
   },
 ];
 
@@ -111,19 +117,19 @@ export default function SolutionsPage() {
       <section className="px-6 md:px-10 pt-20 md:pt-28 pb-16 md:pb-20">
         <div className="mx-auto max-w-[1320px]">
           <Reveal>
-            <p className="eyebrow-accent mb-6">/ Solutions</p>
+            <p className="eyebrow-accent mb-6">/ Systems</p>
           </Reveal>
           <Reveal delay={0.05}>
             <h1 className="display-tight text-[clamp(48px,8vw,120px)] text-ink max-w-[18ch]">
-              Custom AI systems, by category.
+              Production AI systems, ready to deploy.
             </h1>
           </Reveal>
           <Reveal delay={0.15}>
             <p className="mt-10 max-w-[64ch] text-[18px] md:text-[20px] leading-[1.6] text-graphite">
-              Every engagement is bespoke, but the shapes recur. Below are six
-              families of system we are unusually good at shipping into
-              production and keeping there. If your problem looks like one of
-              these — or doesn&rsquo;t — write to us.
+              Six systems we have built, hardened in production, and license
+              to the businesses that need them. The engine is the same. The
+              configuration is yours. We connect it to your stack, train it
+              on your reality, and keep it running.
             </p>
           </Reveal>
         </div>
@@ -147,13 +153,21 @@ export default function SolutionsPage() {
                   <p className="text-[15.5px] leading-[1.65] text-graphite">
                     {f.body}
                   </p>
+                  <div className="flex flex-col gap-1 pt-2">
+                    <span className="font-mono text-[10.5px] tracking-[0.18em] uppercase text-graphite-soft">
+                      Standard connectors
+                    </span>
+                    <p className="text-[13.5px] leading-[1.55] text-ink">
+                      {f.connectors}
+                    </p>
+                  </div>
                   <p className="text-[13.5px] leading-[1.55] text-graphite-soft italic">
                     Ideal for: {f.ideal}
                   </p>
                 </div>
                 <div className="md:col-span-7">
                   <p className="font-mono text-[10.5px] tracking-[0.18em] uppercase text-graphite-soft mb-4">
-                    Typical deliverables
+                    What the system does
                   </p>
                   <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3">
                     {f.deliverables.map((d) => (
@@ -175,10 +189,10 @@ export default function SolutionsPage() {
           <div className="rounded-3xl bg-ink text-parchment p-10 md:p-16 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
             <div>
               <p className="font-mono text-[11px] tracking-[0.18em] uppercase text-ember mb-4">
-                / Doesn&rsquo;t fit?
+                / Need something else?
               </p>
               <h2 className="display text-[28px] md:text-[40px] leading-[1.1] text-parchment max-w-[24ch]">
-                The best engagements are the ones that don&rsquo;t match a category yet.
+                Don&rsquo;t see your work yet? Our roadmap is open.
               </h2>
             </div>
             <Link

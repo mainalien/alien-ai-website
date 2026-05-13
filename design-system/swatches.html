@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AlienAI · Swatches</title>
+    <link rel="stylesheet" href="tokens/colors.css" />
+    <link rel="stylesheet" href="tokens/typography.css" />
+    <style>
+      :root {
+        font-family: var(--ai-font-sans);
+        color: var(--ai-text-primary);
+        background: var(--ai-surface-canvas);
+        -webkit-font-smoothing: antialiased;
+      }
+      body {
+        margin: 0;
+        padding: 48px 32px 96px;
+        max-width: 1200px;
+        margin-inline: auto;
+      }
+      h1 {
+        font-family: var(--ai-font-display);
+        font-weight: var(--ai-fw-bold);
+        font-size: clamp(40px, 8vw, 96px);
+        letter-spacing: var(--ai-tr-display-tight);
+        line-height: var(--ai-lh-display);
+        margin: 0 0 8px;
+      }
+      .eyebrow {
+        font-family: var(--ai-font-mono);
+        font-size: 11px;
+        letter-spacing: var(--ai-tr-eyebrow);
+        text-transform: uppercase;
+        color: var(--ai-text-accent);
+        margin: 0 0 24px;
+      }
+      .lede {
+        max-width: 64ch;
+        color: var(--ai-text-secondary);
+        font-size: 18px;
+        line-height: var(--ai-lh-loose);
+        margin: 0 0 64px;
+      }
+      h2 {
+        font-family: var(--ai-font-display);
+        font-weight: var(--ai-fw-semibold);
+        font-size: 28px;
+        letter-spacing: var(--ai-tr-display);
+        margin: 56px 0 24px;
+      }
+      .grid {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      }
+      .swatch {
+        border: 1px solid var(--ai-border-subtle);
+        border-radius: 16px;
+        overflow: hidden;
+        background: var(--ai-surface-card);
+      }
+      .swatch .chip {
+        height: 140px;
+      }
+      .swatch .meta {
+        padding: 14px 16px 16px;
+        background: var(--ai-surface-canvas);
+      }
+      .swatch .name {
+        font-weight: var(--ai-fw-semibold);
+        font-size: 15px;
+        margin-bottom: 2px;
+      }
+      .swatch .hex {
+        font-family: var(--ai-font-mono);
+        font-size: 12px;
+        color: var(--ai-text-muted);
+      }
+      .swatch .desc {
+        font-size: 12.5px;
+        color: var(--ai-text-secondary);
+        line-height: 1.45;
+        margin-top: 6px;
+      }
+      .type-row {
+        display: flex;
+        align-items: baseline;
+        gap: 24px;
+        padding: 20px 0;
+        border-top: 1px solid var(--ai-border-subtle);
+      }
+      .type-row:last-child {
+        border-bottom: 1px solid var(--ai-border-subtle);
+      }
+      .type-row .label {
+        font-family: var(--ai-font-mono);
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: var(--ai-tr-eyebrow);
+        color: var(--ai-text-muted);
+        width: 140px;
+        flex: 0 0 140px;
+      }
+      footer {
+        margin-top: 96px;
+        padding-top: 24px;
+        border-top: 1px solid var(--ai-border-subtle);
+        font-family: var(--ai-font-mono);
+        font-size: 11px;
+        letter-spacing: var(--ai-tr-eyebrow);
+        text-transform: uppercase;
+        color: var(--ai-text-muted);
+      }
+    </style>
+  </head>
+  <body>
+    <p class="eyebrow">/ AlienAI design system</p>
+    <h1>Swatches.</h1>
+    <p class="lede">
+      A standalone reference for the canonical tokens. Mirrors the values in
+      <code>tokens/design-tokens.json</code>. Open this file directly in a
+      browser — no build step required.
+    </p>
+
+    <h2>Color</h2>
+    <div class="grid">
+      <div class="swatch">
+        <div class="chip" style="background: #171a22"></div>
+        <div class="meta">
+          <div class="name">Ink</div>
+          <div class="hex">#171A22</div>
+          <div class="desc">Primary text, navy-stamp accents, dark surfaces, footer.</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="chip" style="background: #2b2e36"></div>
+        <div class="meta">
+          <div class="name">Ink-soft</div>
+          <div class="hex">#2B2E36</div>
+          <div class="desc">Elevated dark surfaces, secondary navy.</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="chip" style="background: #f0e7d6"></div>
+        <div class="meta">
+          <div class="name">Parchment</div>
+          <div class="hex">#F0E7D6</div>
+          <div class="desc">Page canvas. Warm cream. Never use #FFFFFF.</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="chip" style="background: #e6d7bd"></div>
+        <div class="meta">
+          <div class="name">Linen</div>
+          <div class="hex">#E6D7BD</div>
+          <div class="desc">Section breaks, card backgrounds.</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="chip" style="background: #d24d2a"></div>
+        <div class="meta">
+          <div class="name">Ember</div>
+          <div class="hex">#D24D2A</div>
+          <div class="desc">Signature accent — pills, dots, accent bars. Used sparingly.</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="chip" style="background: #a93b1f"></div>
+        <div class="meta">
+          <div class="name">Ember-deep</div>
+          <div class="hex">#A93B1F</div>
+          <div class="desc">Ember hover state. Eyebrow-accent text.</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="chip" style="background: #e3784f"></div>
+        <div class="meta">
+          <div class="name">Ember-soft</div>
+          <div class="hex">#E3784F</div>
+          <div class="desc">Ember used on dark surfaces (against ink).</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="chip" style="background: #4e5165"></div>
+        <div class="meta">
+          <div class="name">Graphite</div>
+          <div class="hex">#4E5165</div>
+          <div class="desc">Body copy.</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="chip" style="background: #6f7287"></div>
+        <div class="meta">
+          <div class="name">Graphite-soft</div>
+          <div class="hex">#6F7287</div>
+          <div class="desc">Tertiary copy, labels.</div>
+        </div>
+      </div>
+    </div>
+
+    <h2>Typography</h2>
+
+    <div class="type-row">
+      <div class="label">display-tight</div>
+      <div class="ai-display-tight" style="font-size: 96px">
+        Higher order intelligence.
+      </div>
+    </div>
+    <div class="type-row">
+      <div class="label">display</div>
+      <div class="ai-display" style="font-size: 40px">
+        Production AI systems, ready to deploy.
+      </div>
+    </div>
+    <div class="type-row">
+      <div class="label">lead — 19px</div>
+      <div style="font-size: 19px; max-width: 60ch; line-height: 1.5">
+        AlienAI builds production AI systems for the work modern businesses run on.
+      </div>
+    </div>
+    <div class="type-row">
+      <div class="label">body — 16px</div>
+      <div style="font-size: 16px; max-width: 60ch; line-height: 1.65; color: var(--ai-text-secondary)">
+        We do not build from scratch every time. We deploy proven AI systems, configured and connected to your reality — and then we run them for you.
+      </div>
+    </div>
+    <div class="type-row">
+      <div class="label">eyebrow-accent</div>
+      <div class="ai-eyebrow-accent">/ At the intersection of AI &amp; innovation</div>
+    </div>
+    <div class="type-row">
+      <div class="label">wordmark</div>
+      <div class="ai-wordmark" style="font-size: 32px">alienai</div>
+    </div>
+    <div class="type-row">
+      <div class="label">metric</div>
+      <div class="ai-metric" style="font-size: 56px; color: var(--ai-text-accent)">120 +</div>
+    </div>
+
+    <footer>
+      AlienAI · design-system v1.0.0
+    </footer>
+  </body>
+</html>

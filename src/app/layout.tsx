@@ -25,11 +25,11 @@ export const metadata: Metadata = {
     template: "%s — AlienAI",
   },
   description:
-    "AlienAI builds custom AI software systems that automate revenue, reduce operating costs, and compound the productivity of every team they touch.",
+    "AlienAI builds production AI systems for the work modern businesses run on — recruiting, support, sales, finance, knowledge work. Built once, configured to your stack, deployed to run.",
   openGraph: {
     title: "AlienAI — Higher order intelligence for business",
     description:
-      "Custom AI software systems that automate revenue, reduce operating costs, and compound the productivity of every team they touch.",
+      "Production AI systems for the work modern businesses run on. Built once, configured to your stack, deployed to run.",
     url: SITE_URL,
     siteName: "AlienAI",
     type: "website",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "AlienAI — Higher order intelligence for business",
     description:
-      "Custom AI software systems that automate revenue, reduce operating costs, and compound the productivity of every team they touch.",
+      "Production AI systems for the work modern businesses run on. Built once, configured to your stack, deployed to run.",
     images: ["/og.png"],
   },
   icons: {
