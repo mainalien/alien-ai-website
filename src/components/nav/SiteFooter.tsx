@@ -27,7 +27,7 @@ export function SiteFooter() {
               <Link href="/" className="text-ink hover:text-ember-deep no-underline text-[14.5px]">
                 Home
               </Link>
-              <Link href="/solutions/" className="text-ink hover:text-ember-deep no-underline text-[14.5px]">
+              <Link href="/systems/" className="text-ink hover:text-ember-deep no-underline text-[14.5px]">
                 Systems
               </Link>
               <Link href="/results/" className="text-ink hover:text-ember-deep no-underline text-[14.5px]">
@@ -38,6 +38,9 @@ export function SiteFooter() {
               </Link>
               <Link href="/contact/" className="text-ink hover:text-ember-deep no-underline text-[14.5px]">
                 Contact
+              </Link>
+              <Link href="/brand/" className="text-ink hover:text-ember-deep no-underline text-[14.5px]">
+                Brand
               </Link>
             </div>
 

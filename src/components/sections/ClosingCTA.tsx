@@ -40,7 +40,7 @@ export function ClosingCTA() {
                 </span>
               </a>
               <a
-                href="/solutions/"
+                href="/systems/"
                 className="inline-flex items-center justify-between gap-3 border border-ink/20 text-ink rounded-full pl-7 pr-3 py-3.5 text-[15.5px] font-medium no-underline hover:border-ink/50 transition-colors group"
               >
                 <span>Browse our systems</span>
